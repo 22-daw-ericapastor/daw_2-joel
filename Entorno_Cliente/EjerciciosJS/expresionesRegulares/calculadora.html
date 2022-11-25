@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CANVAS 02</title>
+    <style>
+        #micanvas{
+            margin: 33%;
+        }
+    </style>
+    <script>
+        function p(){
+            var canvas = document.getElementById("micanvas");
+            var contenido = canvas.getContext("2d");
+            contenido.fillStyle = "black";
+            contenido.fillRect(0,0,600,600);
+            contenido.strokeStyle = "rgba(0,255,255,0.4)";
+            contenido.lineWidth= 2;
+            contenido.beginPath();
+            contenido.moveTo(0,300);
+            contenido.lineTo(600,300);
+            contenido.moveTo(300,0);
+            contenido.lineTo(300,600);
+            contenido.stroke();
+
+        }
+        window.onload = function (){
+            p();
+        }
+    </script>
+</head>
+<body>
+<canvas id="micanvas">
+
+</canvas>
+</body>
+</html>

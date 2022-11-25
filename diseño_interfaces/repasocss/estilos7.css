@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#bandera{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: green;
+    font-size: 20px;
+    font-family: 'Arial';
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    margin-right: -4px;
+    padding-top: 3px;
+    white-space: nowrap;
+}
+
+a:hover{
+    background-color: aqua;
+    transition: all 0.55s;
+}
+
+
+@media screen and (max-width: 580px){
+    #hamburguesa{
+        position: relative;
+        background-color: aqua;
+        width: 4em;
+        height: 4em;
+        display: block;
+        margin: 20px;
+        border-radius: 20px;
+        z-index: 1;
+    }
+    span{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 3.5em;
+        height: 0.2em;
+        background-color: blue;
+        margin-top: 30px;
+        margin-left: 4px;
+        transition: 0.45s;
+    }
+    #menu{
+        display: none;
+    }
+    span::after{
+        content: '';
+        display: inherit;
+        position: inherit;
+        width: inherit;
+        height: inherit;
+        background-color: blue;
+        top:10px;
+        bottom: 0px;
+        transition: 0.45s;
+    }
+    span::before{
+        content: '';
+        display: inherit;
+        position: inherit;
+        width: inherit;
+        height: inherit;
+        background-color: blue;
+        top:-10px;
+        bottom: 0px;
+        transition: 0.45s;
+       
+        
+    }
+    #bandera:checked + span{
+        background: none;
+        transition: 0.45s;
+    }
+    #bandera:checked + span:after{
+        transform: rotate(-45deg);
+        top: 3px;
+        transition-delay:0s, 0.25s;
+        transition-duration:0.45s;
+    }
+    #bandera:checked + span:before{
+        transform: rotate(45deg);
+        top: 3px;
+        transition-delay:0s, 0.25s;
+        transition-duration:0.45s;
+    }
+    #bandera:checked ~ #menu{
+        display: block;
+        transition: all .45s;
+    }
+    #menu{
+        position: relative;
+        top: 62px;
+        background-color: aliceblue;
+        width: 200px;
+    }
+    #menu a{
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        color: red;
+        white-space: nowrap;
+        width: 100%;
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>Apertura y Cierre de Ventanas</title>
+  <script type="text/javascript">
+    /* 2º DAW Colegio Montessori Zaragoza Desarrollo WEB en entorno cliente
+    Ejecicio objeto Window */
+    function inicializar(){
+      document.getElementById("crear-ventana").onclick=crearNueva;
+      document.getElementById("cerrar-ventana").onclick=cerrarNueva;
+    }
+    var nuevaVentana; // importante declararla aquí
+    function crearNueva(){
+      nuevaVentana = window.open("http://www.fundacionmontessori.com","","height=600,width=800");
+
+    }
+    function cerrarNueva(){
+      if (nuevaVentana){
+        console.log(nuevaVentana);
+        nuevaVentana.close();
+        nuevaVentana = null;
+      }
+    }
+  </script>
+</head>
+<body onLoad="inicializar()">
+<h1>Apertura y cierre de ventanas</h1>
+<form>
+  <p> <input type="button" id="crear-ventana" value="Crear Nueva Ventana">
+    <input type="button" id="cerrar-ventana" value="Cerrar Nueva Ventana"> </p>
+</form>
+</body>
+</html>

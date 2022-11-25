@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+
+            #uno{
+                background-color: green;
+                width: 200px;
+                height: 100px;
+                
+            }
+            #dos{
+                background-color: red;
+                width: 100px;
+                height: 50px;
+                margin: auto;
+
+            }
+        </style>
+        <script>
+            window.onload = function (){
+            document.getElementById("uno").addEventListener('click',hola, false);
+            document.getElementById("dos").addEventListener('click',hola, true);
+
+            }
+            function hola(){
+                alert("Se ha pulsado en "+this.id);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="uno">
+            Elemento 1
+            <div id="dos">
+                Elemento 2
+            </div>
+        </div>
+        
+    </body>
+</html>

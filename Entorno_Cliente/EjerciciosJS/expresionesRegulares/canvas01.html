@@ -1,0 +1,44 @@
+<html>
+<head>
+    <script type="application/javascript">
+        function dibuja() {
+            var radio = 190;
+            var canvas = document.getElementById("micanvas");
+            var contenido = canvas.getContext("2d");
+            //var giro = 0;
+            for(var i = radio;i>=0;i--){
+                    if (i % 5 == 0) {
+                        console.log(i);
+                        contenido.lineWidth = 5;
+                        contenido.strokeStyle = "black";
+                        contenido.beginPath();
+                        contenido.arc(200, 200, i, 0, 2 * Math.PI, false);
+                        contenido.stroke();
+
+                    } else {
+                        contenido.lineWidth = 2;
+                        contenido.strokeStyle = "red";
+                        contenido.beginPath();
+                        contenido.arc(200, 200, i, 0, 2 * Math.PI, false);
+                        contenido.stroke();
+
+                    }
+
+            }
+        }
+        /*function inicio(){
+            setInterval(dibuja, 1);
+        }*/
+    </script>
+    <style>
+        #micanvas{
+            position: absolute;
+            margin: 0px auto;
+        }
+    </style>
+</head>
+<body onload="dibuja();">
+<canvas id="micanvas" width="500" height="500">
+</canvas>
+</body>
+</html>

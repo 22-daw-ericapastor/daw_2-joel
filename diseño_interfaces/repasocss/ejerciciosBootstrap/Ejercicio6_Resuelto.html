@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 - Ejercicio 6</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <style>
+        .a { padding:10px; border: 2px solid darkgrey; width: 350px; position: relative; float: left; margin-left: 10px; margin-top: 5px;}
+        .b { padding:10px; border: 2px solid darkgrey; width: 1100px; position: relative; float: right; margin-left: 10px; margin-top: 5px;}
+        .c { font-size:13px; padding:10px; border: 2px solid darkgrey; position: relative; float: left; margin-left: 10px; margin-top: 5px;}
+    </style>
+
+</head>
+<body>
+<div class="container a">
+    <h2>Esquinas Redondeadas</h2>
+    <p>La clase .rounded agrega esquinas redondeadas a una imagen:</p>
+    <img src="img/cinqueterre.jpg" class="rounded" alt="Cinque Terre" width="304" height="236">
+</div>
+
+<div class="container a">
+    <h2>Circulo</h2>
+    <p>La clase de círculo redondeado da forma a la imagen en un círculo:</p>
+    <img src="img/cinqueterre.jpg" class="rounded-circle" alt="Cinque Terre" width="304" height="236">
+</div>
+
+<div class="container a">
+    <h2>Efecto Miniatura</h2>
+    <p>La clase .img-thumbnail crea una miniatura de la imagen:</p>
+    <img src="img/cinqueterre.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</div>
+<br>
+<div class="b">
+    <div class="container">
+        <h2>Alineación de imágenes</h2>
+        <p>Usa las clases de flotación para flotar la imagen a la izquierda o a la derecha:</p>
+        <img src="img/paris.jpg" class="float-left" alt="Paris" width="304" height="236">
+        <img src="img/paris.jpg" class="float-right" alt="Paris" width="304" height="236">
+    </div>
+</div>
+
+<div class="container c">
+    <h2>Imagen redimensionable</h2>
+    <p>La clase .img-fluid hace que la imagen se adapte bien al elemento principal (cambie el tamaño de la ventana del navegador para ver el efecto):</p>
+    <img class="img-fluid" src="img/paris.jpg" alt="París" width="460" height="345">
+</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!--  -->  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="dist/js/ie10-viewport-bug-workaround.js"></script>
+</div>
+</body>
+</html> 

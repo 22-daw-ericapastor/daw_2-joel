@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var frase = prompt("Introduce una frase");
+
+    var contador_a=0;
+    var contador_e=0;
+    var contador_i=0;
+    var contador_o=0;
+    var contador_u=0;
+
+    var i;
+
+    for(i=0;i<frase.length;i++){
+        if(frase[i]=='a'){
+            contador_a++;
+        }else if(frase[i]=='e'){
+            contador_e++;
+        }else if(frase[i]=='i'){
+            contador_i++;
+        }else if(frase[i]=='o'){
+            contador_o++;
+        }else if(frase[i]=='u'){
+            contador_u++;
+        }
+    }
+    //se puede poner aqui un if para que sino aparece alguna vocal que no te muestre el alert
+    alert("La letra a aparece: "+contador_a);
+    alert("La letra e aparece: "+contador_e);
+    alert("La letra i aparece: "+contador_i);
+    alert("La letra o aparece: "+contador_o);
+    alert("La letra u aparece: "+contador_u);
+
+
+</script>
+</body>
+</html>

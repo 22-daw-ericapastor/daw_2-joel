@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 - Ejercicio 10</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="dist/css/bootstrapA.min.css">
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+  <style>
+    hr{border: 2px solid #4bceb4; background-color: #cccc00; height: 6px; width:80%; }
+  </style>
+  
+</head>
+<body>
+<div class="container">
+  <h2>Grupo de Botones</h2>
+  <p>La clase .btn-group crea un grupo de botones:</p>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">BQ</button>
+    <button type="button" class="btn btn-primary">Lenovo</button>
+    <button type="button" class="btn btn-primary">MSI</button>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <h2>Grupo de Botones Tamaños</h2>
+  <p>Agregue la clase .btn-group- * para ajustar el tamaño de todos los botones en un grupo de botones.</p>
+  <h3>Botones Grandes (Large):</h3>
+  <div class="btn-group btn-group-lg">
+    <button type="button" class="btn btn-primary">BQ</button>
+    <button type="button" class="btn btn-primary">Lenovo</button>
+    <button type="button" class="btn btn-primary">MSI</button>
+  </div>
+  <h3>Botones por defecto:</h3>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">BQ</button>
+    <button type="button" class="btn btn-primary">Lenovo</button>
+    <button type="button" class="btn btn-primary">MSI</button>
+  </div>
+  <h3>Botones Pequeños:</h3>
+  <div class="btn-group btn-group-sm">
+    <button type="button" class="btn btn-primary">BQ</button>
+    <button type="button" class="btn btn-primary">Lenovo</button>
+    <button type="button" class="btn btn-primary">MSI</button>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <h2>Grupo de botones verticales</h2>
+  <p>Utilice la clase .btn-group-vertical para crear un grupo de botones verticales:</p>
+  <div class="btn-group-vertical">
+    <button type="button" class="btn btn-primary">BQ</button>
+    <button type="button" class="btn btn-primary">Lenovo</button>
+    <button type="button" class="btn btn-primary">MSI</button>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <h2>Grupos de botones de anidamiento</h2>
+  <p>Grupos de botones de anidamiento para crear menús desplegables:</p>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">BQ</button>
+    <button type="button" class="btn btn-primary">Lenovo</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      MSI
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Tablet</a>
+        <a class="dropdown-item" href="#">Teléfono</a>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <h2>Botones divididos</h2>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">MSI</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+      <span class="caret"></span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Tablet</a>
+      <a class="dropdown-item" href="#">Teléfono</a>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <h2>Grupo de botones verticales con menú desplegable</h2>
+  <div class="btn-group-vertical">
+    <button type="button" class="btn btn-primary">BQ</button>
+    <button type="button" class="btn btn-primary">Lenovo</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        MSI
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Tablet</a>
+        <a class="dropdown-item" href="#">Teléfono</a>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!--  -->  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="dist/js/ie10-viewport-bug-workaround.js"></script>
+</div>
+</body>
+</html> 

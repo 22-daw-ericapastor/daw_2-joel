@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+            var cookieName = 'HelloWorld';
+            var cookieValue = 'HelloWorld';
+            alert(cookieName);
+            var myDate = new Date();
+            myDate.setMonth(myDate.getMonth() + 12);
+            document.cookie = cookieName +"=" + cookieValue + ";expires=" + myDate 
+                              + ";domain=.example.com;path=/";
+            </script>
+    </body>
+</html>

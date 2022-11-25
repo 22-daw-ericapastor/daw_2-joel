@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Ejercicio de cambio de apariencia a tablas con CSS</title>
+    <style type="text/css">
+        table { border: 1px solid #03476F;
+            border-collapse: collapse;
+            font: normal 11px verdana, arial, helvetica, sans-serif;
+            color: #363636;
+            background: #92C428; }
+        caption { text-align: center;
+            font: bold 14px arial, helvetica, sans-serif;
+            background: transparent;
+            padding: 6px 4px 8px 0px;
+            color: #03476F;
+            text-transform: uppercase; }
+        td, th {
+            border: 1px dotted #03476F;
+            padding: .4em;
+            color: #363636; }
+        thead th {
+            font: bold 11px verdana, arial, helvetica, sans-serif;
+            border: 1px solid #03476F;
+            text-align: left;
+            background: #4591AD;
+            color: #FFFFFF;
+            padding-top:3px; }
+        tfoot td { border: 1px solid #03476F;
+            text-align:center;
+            background: #4591AD;
+            color: #FFFFFF;
+            padding-top:3px; }
+        tbody td { vertical-align: top;
+            text-align: left; }
+        tr.fimpar { background: #AEE239; }
+        tbody tr:hover { background: #FFD800;
+            border: 1px solid #03476F;
+            color: #FFF; }
+        tbody td a:link, tbody td a:visited { background: transparent;
+            text-decoration: none;
+            color: #363636; }
+        tbody td a:hover, tbody td a:active { background: #C2F64D;
+            color: #363636; }
+    </style>
+</head>
+<body>
+<table>
+    <picture>
+        <source media="(min-width: 600px)" srcset="img/beer-512-270546.png">
+        <source media="(min-width: 300px) and (max-width: 600px)"
+                srcset="img/beer-120-270546.png">
+        <source media="(min-width: 50px) and (max-width: 300px)" srcset="img/beer-48-270546.png">
+        <img src="img/beer-152-270546.png" alt="HTML5 logo">
+    </picture>
+</body>
+</html>

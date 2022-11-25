@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    function aleatorio(){
+        var ini = parseFloat(document.getElementById("ini").value);
+        var fin = parseFloat(document.getElementById("fin").value);
+        var resultado = Math.random()*(fin-ini);
+        console.log(resultado);
+        //si quieres el numero de decimales que tu quieras usas Math.pow(10, decimales)
+        decimal= parseFloat(Math.round((resultado)* Math.pow(10, 5)) / Math.pow(10, 5));
+        document.getElementById("resultado").innerHTML = decimal;
+        conosle.log(decimal);
+
+    }
+    window.onload = function (){
+        document.getElementById("btn").onclick=aleatorio;
+    }
+</script>
+<body>
+<form>
+    <input type="text" placeholder="Introduce un numero" id="ini">
+    <input type="text" placeholder="Introduce un numero" id="fin">
+    <input type="button" value="Calcular numero" id="btn">
+</form>
+<div id="resultado">
+
+</div>
+</body>
+</html>

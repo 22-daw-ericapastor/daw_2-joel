@@ -1,0 +1,51 @@
+
+	--Colores--
+La paleta de colores utilizada es la siguiente:
+
+
+color del encabezado -> #22577A
+color del body -> #A6E3D0
+
+	--Fuentes--
+las fuentes utilizadas han sido las siguientes:
+
+Fuente utilizada para los titulos:
+font-family: 'Birthstone', cursive; 
+el tamaño de letra utilizada para los titulos es de 50 px
+el color de los titulos es el siguiente:
+Para el titulo del encabezado es blanco puro -> #ffffff
+Para el titulo de las secciones es negro
+
+Fuente utilizada para el contenido de la web:
+font-family: 'Roboto Condensed', sans-serif;
+el tamaño de la letra del contenido es de 14px
+el color utilizado para el contenido es negro
+
+	--Imágenes--
+El tamaño de las imagenes es el siguiente:
+
+La imagen del logo del encabezado el tamaño es de -> ancho de 90px y alto de 99px
+La imagen del contenido en el que se muestra una breve descripción de la empresa es de ->ancho de 150px y alto de 99px
+Para el posicionamiento con divs:
+-> el tamaño de las imagenes donde se muestra una breve descripción solo varia el alto de la imagen que es de 90px
+-> el tamaño de las imagenes del conetido varia a los 400px de ancho y los 200px de alto
+-> Para el carrusel con divs el tamaño de las imagenes varia a los 500px de ancho y el 100% de alto
+Las imagenes donde se muestra que ofertamos es de -> ancho de 310px y alto de 200px
+Las imágenes tienen un borde redondeado de 25px con sombra de color rgba(0,0,0,0.3)
+
+	--Botones--
+El color utilizado para los botones es el siguiente -> #38A3A5;
+El tamaño de la letra de utilizado para los botones es de 16px
+La fuente utilizada es font-family: 'Roboto Condensed', sans-serif;
+El color de la letra es blanco puro -> #ffffff
+
+	--Formularios--
+
+El tamaño de los inputs del formulario es el siguiente ancho de 408px y alto de 40px
+El tamaño del text area es el siguiente 405px de ancho y 150 de alto
+Color del borde blanco puro -> #ffffff
+Tamaño del boton alto 45px
+
+
+	--Mapa (IFRAME)--
+El ancho del mapa es de 600px y el alto es de 450px

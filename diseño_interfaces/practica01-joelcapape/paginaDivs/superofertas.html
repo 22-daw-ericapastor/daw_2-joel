@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pagina con Posicionamiento de Divs</title>
+	<style type="text/css" media="screen">
+        @import 'css/estilosDivs.css';
+    </style>
+	<link rel="shortcut icon" type="image/jpg" href="img/avion.png"/>
+</head>
+<body>
+<div class="contenedor">
+	<div class="encabezado">
+		<div>
+			<img src="img/avion.png" alt="[LOGO]">&nbsp;<h1>Mundo Viaje</h1>
+		</div>
+	</div>
+	<div class="navegacion">
+		<ul>
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="viajesamedida.html">Viajes a Medida</a></li>
+		<li><a href="ofertas.html">Ofertas</a></li>
+		<li><a href="superofertas.html">Super-Ofertas</a></li>
+		<li><a href="contacto.html">Contacto</a></li>
+		<li><a href="#">Español</a></li>
+		<li><a href="paginaIngles/superofertas.html">Inglés</a></li>
+</ul>
+	</div>
+
+<br></br>
+			<div class="viajes">
+		<h2>Super Ofertas</h2>
+		<ul class="galeria">
+		<li><a href="#img1"><img src="img/pA1.jpg"></a><p>Destino 1</p></li>
+		<li><a href="#img2"><img src="img/pA2.jpg"></a><p>Destino 2</p></li>
+		<li><a href="#img3"><img src="img/pA3.jpg"></a><p>Destino 3</p></li>
+		<li><a href="#img4"><img src="img/pA4.jpg"></a><p>Destino 4</p></li>
+		</ul>
+
+	<div class="modal" id="img1">
+		<h3>Destino 1</h3>
+		<div class="imagen">
+			<a href="#img4">&#60;</a>
+			<a href="#img2"><img src="img/pA1.jpg"></a>
+			<a href="#img2">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img2">
+		<h3>Destino 2</h3>
+		<div class="imagen">
+			<a href="#img1">&#60;</a>
+			<a href="#img3"><img src="img/pA2.jpg"></a>
+			<a href="#img3">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img3">
+		<h3>Destino 3</h3>
+		<div class="imagen">
+			<a href="#img2">&#60;</a>
+			<a href="#img4"><img src="img/pA3.jpg"></a>
+			<a href="#img4">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img4">
+		<h3>Destino 4</h3>
+		<div class="imagen">
+			<a href="#img3">&#60;</a>
+			<a href="#img1"><img src="img/pA4.jpg"></a>
+			<a href="#img1">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	</div>
+
+	</div>
+	<div class="footer">
+			<h2>Datos de Contacto</h2>
+			<p>Envianos sus sugerencias a la siguiente dirección de correo: pagina@pagina.com</p>
+            <p>Les agradecemos su colaboración para mejorar nuestra página web</p>
+            <p>
+            Web Realizada por Joel Capape<br>
+            Copyright @ 2021 Mundo Viaje - Agencia de Viajes<br>
+            Última Actualización 10-11-2021
+            </p>
+		
+	</div>
+	
+</div>
+</body>
+</html>

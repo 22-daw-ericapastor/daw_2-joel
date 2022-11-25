@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 - Ejercicio 20</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <style>
+    hr{border: 2px solid #666; background-color: #fff; height: 6px; width:80%; border-radius:10px}
+  </style>
+  
+</head>
+<body>
+<hr>
+<div class="container">
+  <h2>Formulario Apilado/Stacked</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Recuerdame
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+<hr>
+<div class="container">
+  <h2>Formulario en Línea/Inline</h2>
+  <p>La ventana gráfica tiene que ser más grande que 576 píxeles de ancho para ver que todos los elementos del formulario estén en línea y alineados a la izquierda. En pantallas pequeñas, los grupos de formularios se apilarán horizontalmente.</p>
+  <form class="form-inline" action="/action_page.php">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Recuerdame
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!--  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="dist/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

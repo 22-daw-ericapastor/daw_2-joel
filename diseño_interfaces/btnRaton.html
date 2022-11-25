@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function detectarBtn(event){
+                if(event.which == 1){
+                    alert("Es el btn izquierdo");
+                }if(event.which ==3){
+                    alert("Es el btn derecho");
+                }if(event.which ==2){
+                    alert("Es el btn central");
+                }
+            }
+
+            function detectarTeclado(){
+                var tecla = event.keyCode;
+                
+                //Esto evita que se ejecuten las teclas del troleo
+                event.preventDefault();
+
+                if(event.altKey){
+
+                    if(tecla>=13 && tecla<=98){
+                        console.log("Se ha pulsado alt"+tecla);
+                }
+
+                }
+                /*if(event.ctrlKey){
+
+                    if(tecla>=13 && tecla<=98){
+                        console.log("Se ha pulsado ctrl"+tecla);
+                    }
+
+                }*/
+                
+                if(event.shiftKey){
+
+                    if(tecla>=13 && tecla<=98){
+                        console.log("Se ha pulsado shift"+tecla);
+                    }
+
+                }
+                if(event.key == 18){
+
+                    if(event.key == 17){
+
+                        if(tecla>=13 && tecla<=98){
+                        console.log("Se ha pulsado altgr"+tecla);
+                    }
+
+                    }
+
+                }
+                
+
+            }
+
+            
+        </script>
+    </head>
+    <body>
+        <button id="label" onmousedown="detectarBtn(event)">Da Click</button>
+        <input onkeydown="detectarTeclado()"/>
+
+    </body>
+</html>

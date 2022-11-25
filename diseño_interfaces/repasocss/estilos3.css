@@ -1,0 +1,75 @@
+#hamburguesa{
+    position: relative;
+    background-color: blueviolet;
+    display: block;
+    margin: 20px;
+    width: 4em;
+    height: 4em;
+    border-radius: 20px;
+}
+#bandera{
+    display: none;
+}
+
+#hamburguesa span{
+    content: '';
+    position: absolute;
+    background-color: coral;
+    width: 3.5em;
+    height: 0.2em;
+    margin-left: 4px;
+    margin-top: 30px;
+
+}
+
+/*
+
+    Con before y after dibujamos las lineas superior e inferior
+
+*/
+
+#hamburguesa span::before{
+    content: '';
+    position: absolute;
+    background-color: greenyellow;
+    width: inherit;
+    height: inherit;
+    top: initial;
+    bottom: 10px;
+}
+
+#hamburguesa span::after{
+    content: '';
+    position: absolute;
+    background-color: greenyellow;
+    width: inherit;
+    height: inherit;
+    top: 10px;
+    bottom: initial;
+}
+
+
+/*
+
+    Con esto hacemos desaparecer la barra del medio
+
+*/
+#bandera:checked + span{
+    background: none;
+    transition-delay: 0s, 0.25s;
+    transition-duration:0.20s ;
+
+}
+#bandera:checked +span::before{
+    transform: rotate(45deg);
+    top: 3px;
+    transition-delay: 0s, 0.25s;
+    transition-duration:0.20s ;
+}
+#bandera:checked +span::after{
+    transform: rotate(-45deg);
+    top: 3px;
+    margin-bottom: -10px;
+    transition-delay: 0s, 0.25s;
+    transition-duration:0.20s ;
+}

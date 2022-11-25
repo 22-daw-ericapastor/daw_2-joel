@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 - Ejercicio 25</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <style>
+    hr{border: 2px solid #666; background-color: #fff; height: 6px; width:80%; border-radius:10px}
+  </style>
+</head>
+<body>
+<hr>
+<div class="container">
+  <h3>Ejemplo 1 -  Popover</h3>
+  <a href="#" data-toggle="popover" title="Cabecera de Popover" data-content="Contenido del Popover, Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla">Alternar popover</a>
+</div>
+<hr>
+<div class="container">
+  <h3>Ejemplo 2 - Popover</h3>
+  <a href="#" title="Cabecera" data-toggle="popover" data-placement="top" data-content="Contetenido del Top">Arriba</a>
+  <a href="#" title="Cabecera" data-toggle="popover" data-placement="bottom" data-content="Contetenido del Botton">Abajo</a>
+  <a href="#" title="Cabecera" data-toggle="popover" data-placement="left" data-content="Contetenido del Left">Izquierda</a>
+  <a href="#" title="Cabecera" data-toggle="popover" data-placement="right" data-content="Contetenido del Right">Derecha</a>
+</div>
+<hr>
+<div class="container">
+  <h3>Ejemplo 3 -Popover</h3>
+  <a href="#" title="Popover Descartable" data-toggle="popover" data-trigger="focus" data-content="Haz clic en cualquier parte del documento para cerrar este popover">Púlsame</a>
+</div>
+<hr>
+<div class="container">
+  <h3>Ejemplo 4 - Popover</h3>
+  <a href="#" title="Cabecera" data-toggle="popover" data-content="Contenido. Bla bla bla bla bla bla bla">Púlsame</a><br>
+  <a href="#" title="Cabecera" data-toggle="popover" data-trigger="hover" data-content="Contenido. Ble ble ble ble ble ble ble">Desplázate sobre mí</a>
+</div>
+<hr>
+
+
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!--  -->
+<script src="dist/js/bootstrapA.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="dist/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

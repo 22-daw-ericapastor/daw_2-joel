@@ -1,0 +1,863 @@
+/*
+
+Esto lo aplico para que por defecto la página me cargue estos estilos
+
+*/
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+*{
+	margin: 0%;
+	padding: 0%;
+	
+
+}
+
+/*
+
+	BTN PARA IR ARRIBA
+
+*/
+.ir-arriba {
+	display:none;
+	background:#38A3A5;
+	cursor:pointer;
+	position: fixed;
+	border-radius: 5px;
+	bottom:20px;
+	right:20px;
+	z-index: 1;
+}
+
+.ir-arriba img{
+	width: 25px;
+	height: 25px;
+}
+
+/*
+
+
+MENU DE NAVEGACION
+
+*/
+
+header{
+	height: 100%;
+	background-color: #22577A;
+	padding: 0em 2.5em;
+	color: #ffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header h1{
+	font-family: 'Birthstone', cursive;
+	font-size: 2.5em;
+	margin-left: 9%;
+}
+img{
+	padding: 10px;
+	width: 75px;
+	height: 75px;
+}
+.banderas{
+	position: relative;
+	top: 5px;
+	padding: 0px;
+	width: 25px;
+	height: 25px;
+}
+
+.navegacion a {
+   padding: 10px;
+   text-decoration: none;
+   font-size: 16px;
+   text-decoration: none;
+   background-color: #38A3A5;
+   font-family: 'Roboto Condensed', sans-serif;
+   transition: background-color 0.5s;
+   border-radius: 5px;
+   color: #ffffff;
+
+
+}
+.navegacion a:hover{
+   background-color: #80ED99;
+   color: #ffffff;
+   transition: 1s;
+
+} 
+
+.navegacion a:visited {
+
+    text-decoration: none;
+}
+/* con el order si aplicamos la propiedad flex lo que le estamos diciendo es que aparezca el menu de hamburguesa al final y no al principio como estaba por defecto */
+.mostrar-resp{
+	order: 1;
+}
+.mostrar-resp,.esconder-resp{
+	transition: 0.4s;
+	display: none;
+
+}
+.mostrar-resp:hover{
+	color: #38A3A5;
+}
+.esconder-resp:hover{
+	color: #38A3A5;
+}
+#pulsado{
+	display: none;
+}
+
+/*
+
+ENCABEZADO DE LA PAGINA
+
+*/
+.encabezado{
+	padding: 0em 2.5em;
+	background-image: url(../img/destino.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 70vh;
+}
+
+.contenido{
+	position: relative;
+	color: #ffffff;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 35%;
+}
+.contenido h3{
+	font-size: 4em;
+	font-weight: 400;
+	padding: 1em 0em;
+	font-family: 'Birthstone', cursive;
+}
+.contenido a{
+	text-decoration: none;
+	color: #ffffff;
+	border: 2px solid #38A3A5;
+	border-radius: 5px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.3em;
+	padding: 10px 40px;
+	align-self: baseline;
+	margin-left: 100px;
+}
+.contenido a:hover{
+	background-color: #80ED99;
+	border-color: #80ED99;
+   	color: #ffffff;
+   	transition: 1s;
+}
+
+/*
+
+
+PERSONAL TARJETAS DE DESCRIPCION
+
+*/
+#personal{
+	padding: 2.5em 2.5em;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+#personal img{
+	border-radius: 100%;
+}
+#personal div{
+	padding: 30px 30px;
+}
+#personal div h4{
+	font-size: 20px;
+	margin: 15px 0px;
+
+}
+#personal div p{
+	font-size: 15px;
+}
+.btn_personal{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #38A3A5;
+	border-radius: 10px;
+	color: #ffffff;
+	margin-top: 15px;
+	margin-left: 15px;
+	padding: 10px 30px;
+	font-family: 'Roboto Condensed', sans-serif;
+
+
+}
+.btn_personal:hover{
+	background-color: #80ED99;
+	border-color: #80ED99;
+   	color: #ffffff;
+   	transition: 1s;
+}
+
+/*
+
+A QUE SE DEDICA LA PÁGINA WEB
+
+
+*/
+#somos{
+
+	background-color: #22577A;
+
+}
+.contenedor{
+		padding: 2.5em 2.5em;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+}
+
+.contenedor .tarjeta{
+	background-color: #ffffff;
+	width: 370px;
+	height: 440px;
+	margin: 10px;
+	border-radius: 10px;
+}
+.contenedor .tarjeta:hover{
+	background-color: #80ED99;
+	box-shadow: 10px 16px rgba(0, 0, 0,0.2);
+	color: #ffffff;
+	transform: translateY(-15px);
+	transition: 1s;
+}
+
+.imagen{
+	height: 170px;
+	margin-bottom: 15px;
+	background-size: cover;
+	border-radius: 10px 10px 0px 0px;
+}
+.descripcion{
+	background-image: url(../img/agencia-de-viajes.jpg);
+}
+.quienes{
+	background-image: url(../img/quienes.jpeg);
+}
+
+.tarjeta h4{
+	padding: 10px;
+	font-family: 'Birthstone', cursive;
+	font-size: 30px;
+}
+.tarjeta p{
+	padding: 10px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/*
+
+APARTADO DE ICONOS DE LA WEB
+
+*/
+
+#viajes{
+
+	background-color:#57CC99;
+	padding: 2.5em 2.5em;
+
+}
+.contenedor_viaje{
+	padding: 50px 50px 0px 50px;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+
+}
+.contenedor_viaje div{
+	flex: 1;
+	margin: 20px 0px;
+	border-right: 2px solid rgba(255, 255, 255, 0.3);
+}
+/*
+
+Si los contenedores fueran ids no sobrescribiria el #viaje3
+
+*/
+#viaje3{
+
+	border: none;
+}
+.contenedor_viaje div i{
+	color: #ffffff;
+
+}
+.contenedor_viaje div h6{
+	margin: 15px 0px;
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 100;
+	font-family: 'Birthstone', cursive;
+
+}
+.contenedor_viaje div p{
+	color: #000000;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 15px;
+
+}
+.btn_viaje{
+	text-align: center;
+	padding-bottom: 50px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.btn_viaje .btn_personal:hover{
+	background-color: #ffffff;
+	color: #000000;
+}
+
+
+/*
+
+FORMULARIO DE CONTACTO
+
+
+*/
+
+.contacto{
+	padding: 2.5em 2.5em;
+}
+.contacto h4{
+	text-align: center;
+	font-size: 45px;
+	margin-bottom: 20px;
+	font-family: 'Birthstone', cursive;
+}
+.contacto form{
+	max-width: 80%;
+	margin: 0 auto;
+}
+.datos_formulario{
+	display: flex;
+}
+.datos_formulario div{
+	padding: 10px;
+	flex: 1;
+}
+form label{
+	display: block;
+	margin-bottom: 10px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+form input, form textarea{
+	border-radius: 5px;
+	border: 2px solid #22577A;
+	padding: 5px 5px;
+	outline: 0;/* PARA QUITAR EL BORDE AZUL */
+	width: 100%;
+}
+form input:focus, form textarea:focus{
+	border-color: #38A3A5;
+}
+.mensaje{
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+.btn_formulario .btn_personal{
+	display: block;
+	text-align: center;
+}
+#mapa{
+	background-color: #22577A;
+
+}
+.mapa-responsive{
+	overflow: hidden;
+	padding-bottom: 200px;
+	position: relative;
+	height: 0;
+}
+.mapa-responsive aside iframe{
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+#mapa h4{
+	color: white;
+}
+
+.tarjeta-contacto{
+	background-color: #ffffff;
+	width: 300px;
+	height: 220px;
+	margin: 10px;
+	border-radius: 10px;
+}
+.tarjeta-contacto p{
+	padding: 10px;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 10px;
+}
+.tarjeta-contacto:hover{
+	box-shadow: 10px 16px rgba(0, 0, 0,0.2);
+	transform: translateY(-15px);
+	transition: 1s;
+}
+
+/*
+
+         --ESTILOS PARA LA GALERIA DE IMAGENES--
+
+*/
+
+ .viajes h2{
+	text-align: center;
+	font-family: 'Birthstone', cursive;
+	font-size: 50px
+ }
+ 
+ 
+ .galeria {
+	width: 90%;
+	margin: auto;
+	list-style: none;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+ }
+ 
+ .galeria li {
+	margin: 5px;
+ }
+ 
+ .galeria img {
+	width: 400px;
+	height: 200px;
+	border-radius: 25px
+ }
+ 
+ .galeria li p{
+	font-family: 'Roboto Condensed', sans-serif;
+	margin-left: 0.8rem;
+ }
+ 
+ .modal {
+	display: none;
+ }
+ 
+ .modal:target {
+	
+	display: block;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+ }
+ 
+ .modal h3 {
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	margin: 15px 0;
+	font-family: 'Birthstone', cursive;
+ }
+ 
+ .imagen {
+	width: 100%;
+	height: 50%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ }
+ 
+ .imagen a {
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 0 10px;
+ }
+ 
+ .imagen a:nth-child(2) {
+	margin: 0;
+	height: 100%;
+	flex-shrink: 2;
+ }
+ 
+ .imagen img {
+	width: 500px;
+	height: 100%;
+	max-width: 100%;
+	border: 56px solid #fff;
+	box-sizing: border-box;
+ }
+ 
+ .cerrar {
+	display: block;
+	background: #38A3A5;
+	width: 25px;
+	height: 25px;
+	margin: 15px auto;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	color: #ffff;
+	padding: 5px;
+	border-radius: 50%;
+	line-height: 25px;
+	font-family: 'Roboto Condensed', sans-serif;
+ }
+
+ /*
+ 
+ VENTANA MODAL
+ 
+ */
+
+
+.vtn-modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0,0.5);
+	transition: all 1s ease;
+	display: none;
+}
+#btn-modal:checked ~ .vtn-modal{
+	display: flex;
+} 
+.contenedor-modal{
+	width: 800px;
+	height: 300px;
+	margin: auto;
+	background: #fff;
+	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+	transition: all 1s ease;
+	position: relative;
+	transform: translateY(-30%);
+}
+#btn-modal:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+} 
+.contenedor-modal header{
+	padding: 10px;
+	background: #22577A;
+	color: #fff;
+	height: 50px;
+	font-size: 15px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.contenedor-modal label{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+}
+.contenido-modal{
+	width: 100%;
+	padding: 10px; 
+}
+.contenido-modal h3{
+	margin-bottom: 10px;
+}
+.contenido-modal p{
+	margin-bottom: 7px;
+}
+#btn-modal{
+	display: none;
+}
+.lbl-modal{
+	background: #38A3A5;
+	padding: 10px 15px;
+	border-radius: 4px;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.lbl-modal:hover{
+	background-color: #ffffff;
+	color: #000000;
+	transition: 1s ease;
+}
+.contenedor-modal article h3{
+	font-family: 'Birthstone', cursive;
+	font-size: 30px;
+}
+.contenedor-modal article ul li{
+	font-family: 'Roboto Condensed', sans-serif;
+	margin-left: 15px;
+	text-align: left;
+	list-style-type: upper-roman;
+	
+}
+
+
+/*
+
+COPYRIGHT
+
+*/
+footer{
+	background-color: #22577A;
+	text-align: center;
+	padding: 10px 0px;
+
+}
+footer p{
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #ffffff;
+}
+
+
+/* 
+
+
+PARA HACER DESAPARECER EL TITULO CUANDO PASA A UNA RESOLUCION DETERMINADA
+
+ */
+@media(max-width: 1024px){
+
+	h1{
+		display: none;
+	}
+
+	.encabezado{
+		height: 70vh;
+	}
+
+
+
+
+
+}
+
+/*
+
+RESPONSIVE PARA TABLET
+
+*/
+
+
+@media(max-width: 810px){
+
+	/* MENU DE NAVEGACION */
+
+	.mostrar-resp,.esconder-resp{
+
+	display: block;
+
+	}
+
+	h2{
+		display: block;
+	}
+
+	.navegacion{
+		position: fixed;
+		width: 100%;
+		height: 80vh;
+		left: 100%;
+		top: 0;
+		text-align: center;
+		padding: 100px 0px;
+		z-index: 100;
+		background-color: #22577A;
+		transition: 0.8s;
+	}
+
+	.navegacion a{
+		display: block;
+		padding: 20px;
+		border-radius: 0px;
+	}
+	.esconder-resp{
+		position: absolute;
+		top: 40px;
+		right: 40px;
+	}
+	.esconder-resp:hover{
+		transition: 10s;
+		transform: rotate(360deg);
+	}
+	#pulsado:checked ~ .navegacion{
+		left: 0;
+	}
+	
+	/*
+
+	ENCABEZADO
+	
+	*/
+	.encabezado{
+		height: 55vh;
+	}
+
+	.contenido{
+		margin:0%;
+	}
+	.contenido a{
+		margin:0%;
+	}
+
+	/*
+
+	PERSONAL
+
+	*/
+
+	#personal{
+		flex-direction: column;
+	}
+
+	/*
+
+		SOMOS
+
+	*/
+
+.contenedor .tarjeta{
+		height: 450px;
+	}
+
+	/*
+
+		
+		ICONOS
+
+	*/
+
+	.contenedor_viaje{
+		
+		flex-direction: column;
+	}
+	.contenedor_viaje div{
+
+		border: none;
+	}
+
+	/*
+
+	DATOS DE CONTACTO
+
+	*/
+
+	.datos_formulario{
+		flex-direction: column;
+	}
+
+	.tarjeta-contacto{
+		height: 255px;
+
+	}
+
+	/*
+	
+	VENTANA MODAL
+	
+	*/
+	.contenedor-modal{
+		width: 95%;
+	}
+
+
+
+
+
+}
+
+/*
+
+RESPONSIVE PARA MOVILES CON DIFERENTES RESOLUCIONES
+
+*/
+@media(max-width: 450px){
+
+	.encabezado{
+		height: 90vh;
+	}
+	.contenedor .tarjeta{
+		height: 500px;
+	}
+	.tarjeta-contacto{
+		height: 500px;
+	}
+	.galeria img{
+		width: 200px;
+		height: 100px;
+	}
+
+
+
+}
+
+@media(max-width: 375px){
+
+	.encabezado{
+		height: 65vh;
+	}
+	.contenedor .tarjeta{
+		height: 570px;
+	}
+	.tarjeta-contacto{
+		height: 370px;
+	}
+
+
+
+}
+@media(max-width: 280px){
+
+	.encabezado{
+		height: 70vh;
+	}
+	.contenedor .tarjeta{
+		height: 770px;
+	}
+	.tarjeta-contacto{
+		height: 370px;
+	}
+	.imagen img{
+		width: 220px;
+		height: 90%;
+		max-width: max-content;
+	}
+	.imagen a{
+		font-size: 30px;
+	}
+
+	.viajes h2,.contacto h4{
+		font-size: 40px;
+	}
+	
+	.contenido-modal article h3{
+		font-size: 25px;
+	}
+
+	.contenido-modal article ul li{
+		font-size: 15px;
+	}
+
+
+}
+
+
+

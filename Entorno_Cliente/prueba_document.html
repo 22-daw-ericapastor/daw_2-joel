@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title> Movimiento de la barra de estado </title>
+    <!-- INICIO CODIGO TITULO MOVIMIENTO -->
+    <script type="text/JavaScript">
+        var rep = 1
+        var title = document.title
+        var longitud = title.length
+        var emp = 1
+        function movimiento_letra()
+        {
+            titulo = title.substring(emp, longitud) + title.substring(0, emp)
+            document.title=titulo
+            emp++
+            if (emp==longitud+1)
+            {
+                emp=0
+                if (rep==0) return
+            }
+            //aqui se pone el tiempo que quieras
+            setTimeout("movimiento_letra()",100)
+        }
+        if (document.title) movimiento_letra()
+    </script>
+    <!-- FIN CODIGO TITULO MOVIMIENTO -->
+</head>
+
+<body>
+<h1>Texto en movimiento en la barra de estado</h1>
+<h2>Ejemplo 2</h2>
+
+
+
+
+
+
+</body>
+</html>

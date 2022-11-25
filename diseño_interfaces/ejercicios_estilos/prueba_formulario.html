@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @import "estilos.css";
+    </style>
+    <script>
+        class Point {
+            constructor(x=0,y=0) {
+                this.x=x;
+                this.y=y;
+            }
+            toString () {
+                return '(' + this.x + ', ' + this.y + ')';
+            }
+        }
+        // Creando puntos
+        let p1 = new Point( 10, 20 );
+        let p2 = new Point();
+        // Output p1: (con parámetros)
+        // p1.toString(); // (10, 20)
+        // Output p2: (sin parámetros)
+        p2.toString(); // (0, 0)
+        console.log(p2.toString());
+    </script>
+</head>
+<body >
+
+</body>
+</html>

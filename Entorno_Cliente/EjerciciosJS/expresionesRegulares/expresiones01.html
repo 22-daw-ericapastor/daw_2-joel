@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="texto">
+<script>
+    function probar(){
+        //miExpresionRegular = /^[a-zA-Z\n]+$/;
+        //miExpresionRegular = /^([0-2]{1}\d{1}|3[0,1]{1})\/\d{2}\/\d{4}$/;
+        //miExpresionRegular = /^zaragoza$/i;
+        //miExpresionRegular = /^[a-zñáéíóú]+$/i;
+        //miExpresionRegular = /^ab+c$/;
+        //alert(miExpresionRegular.test(document.getElementById("texto").value)==true?"esta ok":"no ok");
+        //PROBANDO EL METODO EXEC
+        var texto ="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when " +
+            "an unknown printer took a galley of type and scrambled it to make a type specimen book. " +
+            "It has survived not only five centuries, but also the leap into electronic typesetting, remaining " +
+            "essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing " +
+            "Lorem Ipsum passages," +
+            " and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum";
+        miExpresionRegular=/^[a-z]$/i;
+      alert(texto.exec(document.getElementById("texto").value)==true?"esta ok":"no esta");
+
+    }
+    //document.getElementById("texto").onchange = probar;
+</script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 - Ejercicio 21</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <style>
+    hr{border: 2px solid #666; background-color: #fff; height: 6px; width:80%; border-radius:10px}
+  </style>
+  
+</head>
+<body>
+<hr>
+<div class="container">
+  <h2>Controles de Formularios: Input</h2>
+  <p>El siguiente formulario contiene dos elementos de entrada; uno de tipo texto y uno de tipo contraseña:</p>
+  <form>
+    <div class="form-group">
+      <label for="usr">Nombre:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Contraseña:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+  </form>
+</div>
+<hr>
+<div class="container">
+  <h2>Textarea</h2>
+  <p>El siguiente formulario contiene un área de texto para comentarios:</p>
+  <form>
+    <div class="form-group">
+      <label for="comment">Comentario:</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+  </form>
+</div>
+<hr>
+<div class="container">
+  <h2>Casilla de verificación / Checkbox</h2>
+  <p>El siguiente formulario contiene tres casillas de verificación. La última opción está deshabilitada:</p>
+  <form>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" value=""> Opción 1
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" value=""> Opción 2
+      </label>
+    </div>
+    <div class="form-check disabled">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" value="" disabled> Opción 3
+      </label>
+    </div>
+  </form>
+</div>
+<hr>
+<div class="container">
+  <h2>Casilla de verificación en línea/inline checkbox</h2>
+  <p>El siguiente formulario contiene tres casillas de verificación en línea:</p>
+  <form>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" value=""> Opción 1
+      </label>
+    </div>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" value=""> Opción 2
+      </label>
+    </div>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" value="" disabled> Opción 3
+      </label>
+    </div>
+  </form>
+</div>
+<hr>
+<div class="container">
+  <h2>Botones de Radio/radio buttons</h2>
+  <p>El siguiente formulario contiene tres botones de radio. La última opción está deshabilitada:</p>
+  <form>
+    <div class="radio">
+      <label><input type="radio" name="optradio"> Opción 1</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio"> Opción 2</label>
+    </div>
+    <div class="radio disabled">
+      <label><input type="radio" name="optradio" disabled> Opción 3</label>
+    </div>
+  </form>
+</div>
+<hr>
+<div class="container">
+  <h2>Botones de radio en una Línea.</h2>
+  <p>El siguiente formulario contiene tres botones de radio en línea:</p>
+  <form>
+    <label class="radio-inline">
+      <input type="radio" name="optradio"> Opción 1
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio"> Opción 2
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio"> Opción 3
+    </label>
+  </form>
+</div>
+<hr>
+<div class="container">
+  <h2>Select</h2>
+  <p>El siguiente formulario contiene dos menús desplegables (listas de selección):</p>
+  <form>
+    <div class="form-group">
+      <label for="sel1">Seleccionar lista (seleccionar una):</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+      <br>
+      <label for="sel2">Lista de selección múltiple (manten presionada la tecla Mayús para seleccionar más de uno):</label>
+      <select multiple class="form-control" id="sel2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </form>
+</div>
+<hr>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!--  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="dist/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

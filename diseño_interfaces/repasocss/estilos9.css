@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#hamburguesa{
+    position: relative;
+    display: block;
+    background-color: orange;
+    width: 4em;
+    height: 4em;
+    margin: 20px;
+    border-radius: 20px;
+}
+#btn{
+    display: none;
+}
+span{
+    display: block;
+    position: absolute;
+    width: 3.5em;
+    height: 0.2em;
+    background-color: white;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin-top: 30px;
+    margin-left: 4px;
+    transition: all 0.25s;
+}
+span::before{
+    content: '';
+    display: inherit;
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    top: 10px;
+    bottom: inherit;
+    right: inherit;
+    left: inherit;
+    transition-property: bottom transform 0.25s;
+    transition: all 0.25s;
+}
+span::after{
+    content: '';
+    display: inherit;
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    top: -10px;
+    bottom: inherit;
+    right: inherit;
+    left: inherit;
+    transition-property: top transform 0.25s;
+    transition: all 0.25s;
+}
+
+/*
+
+    LE DAMOS ANIMACION
+
+
+*/
+#btn:checked +span{
+    background: none;
+    transition: all 0.25s;
+}
+#btn:checked +span::after{
+    transition-property: top transform 0.25s;
+    transform: rotate(45deg);
+    top: 3px;
+}
+#btn:checked +span::before{
+    transition-property: bottom transform 0.25s;
+    transform: rotate(-45deg);
+    top: 3px;
+}

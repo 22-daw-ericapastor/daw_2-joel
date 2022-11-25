@@ -1,0 +1,96 @@
+.letras{
+    color: lightgrey;
+    font-family: "Comic Sans MS";
+    font-size: 1.3em;
+}
+.letrasBody{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 2em;
+    letter-spacing: 0.3em;
+}
+.elemento_menu{
+    margin: 0px 2%;
+}
+#menu{
+background-color: lightslategrey;
+padding: 0.8em;
+}
+
+#contactanos{
+    float: right;
+    margin: 0 0.4em;
+}
+.elemento_menu{
+    margin: 0.4em;
+}
+#cuerpo{
+background-color: lightgrey;
+height: 38em;
+}
+#pie{
+    background-color: grey;
+    height: 3em;
+
+}
+#contactanos2{
+    float: right;
+    margin: 0 0.4em;
+    display: none;
+}
+/*HACEMOS EL RESPONSIVE*/
+@media screen and (max-width: 1100px){
+    .letras{
+        font-size: 1em;
+    }
+    .letrasBody{
+        font-size: 0.8em;
+    }
+
+}
+@media screen and (max-width: 960px){
+    .letras{
+        font-size: 0.9em;
+    }
+    .letrasBody{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 680px){
+    #contactanos{
+        display: none;
+    }
+
+        /*
+        
+        1º OPCION
+        
+        #uno{
+            margin-left: -0.6px;
+        }
+    
+        #dos::before { 
+            content: '\A'; 
+            white-space: pre;
+        }
+        #tres::before{
+            content: '\A'; 
+            white-space: pre;
+        }*/
+
+        #menu{
+            width: max-content;
+            height: max-content;
+        }
+
+        .elemento_menu{
+            display: block;
+        }
+        span#dos,span#tres{
+            margin-left: 30px;
+        }
+
+    #contactanos2{
+        display: inline-block;
+    }
+}

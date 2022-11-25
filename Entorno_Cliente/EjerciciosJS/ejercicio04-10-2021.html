@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><input type="text" id="cuadro1"></td>
+        <td><select id="operador">
+            <option value="1">Suma</option>
+            <option value="2">Resta</option>
+            <option value="3">Multi</option>
+            <option value="4">Divi</option>
+        </select></td>
+        <td><button onclick="myFunction()">Operar</button></td>
+        <td><input type="text" id="cuadro3"></td>
+    </tr>
+    <tr>
+        <td><input type="text" id="cuadro2"></td>
+    </tr>
+</table>
+<script>
+    function myFunction() {
+        var num1=document.getElementById("cuadro1").value;
+        var num2=document.getElementById("cuadro2").value;
+        var operador = document.getElementById("operador").value;
+        console.log(num1);
+        console.log(num2);
+        console.log(operador);
+        switch (operador){
+            case 1:
+                var resultado = parseInt(num1)+parseInt(num2);
+
+                break;
+            case 2:
+                var resultado = parseInt(num1)-parseInt(num2);
+                break;
+            case 3:
+                var resultado = parseInt(num1)*parseInt(num2);
+                break;
+            case 4:
+                var resultado = parseInt(num1)/parseInt(num2);
+                break;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,610 @@
+/* Estilos para el 2º Ejecicio de Clase de la Asignatuara Diseño de Interfaces WEB
+   Si se observan los estilos se puede ver diferentes formas de usarlos, anidarlos,
+   sobreescribir parees de ellos o completar opciones entre ellos.
+   Miguel Ángel Gómez
+ */
+
+/* Definiemos el tipo de letra por defecto para toda la página Web*/
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Los títulos de primer nivel tendrán una pequeña sombra
+  y estarán alineados a la izquierda y separados de la base
+  por 20px*/
+h1{
+  color: #354;
+  font-weight: 800;
+  text-shadow: 0px  1px 3px #FFFFFF;
+  font-family: sans-serif;
+  left: 0px;
+  bottom: 20px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+/* Las líneas horizontales las pondremos con puntos de 1px,
+  color #666666 y separados por arriba y por abajo en 10px,
+  y por la derecha e izquierda en 20px*/
+hr{
+  margin: 10px 20px;
+  border: 1px dashed #666;
+}
+
+/* Sombra utilizada para textos*/
+.sombraT{
+  text-shadow: 0px 1px 3px #FFFFFF;
+}
+
+/* Sombra utilizada en la cabecera y en algunos subtítulos de la página */
+.sombraD{
+  box-shadow: 3px 3px 4px #b1b3a2;
+  -moz-box-shadow: 3px 3px 4px #b1b3a2;
+  -webkit-box-shadow: 3px 3px 4px #b1b3a2;
+}
+/* Sombra utilizada en subtítulos de la página Index*/
+.sombraE{
+  box-shadow: 3px 3px 4px #3c7439;
+  -moz-box-shadow: 3px 3px 4px #3c7439;
+  -webkit-box-shadow: 3px 3px 4px #3c7439;
+}
+
+/* Contenedor general para todo el 'body'
+  por si queremos mover o modificar la página completa */
+#todo{
+  margin: 0px auto;
+  float: left;
+  aling:center;
+}
+
+/* Contenedor para el 'membrete' con su logo y el menú */
+#cabecera{
+  text-align: center;
+}
+
+/* Caja con las esquinas redondeadas para la cabecera.
+   Tiene un gradiente que comienza al 85% del relleno verde.
+   Se le pone un color de fondo liso por si el navegador no admite
+   los degradados*/
+.cajaRedonda{
+  float:left;
+  position: relative;
+  left: 0px;
+  margin-left: 5px; 
+  height: 100px;
+  width: 926px;
+  background: -webkit-linear-gradient(#c12929 85%, #c6dd85);
+  background: -moz-linear-gradient(#c12929 85%, #c6dd85);
+  background: -o-linear-gradient(#c12929 85%, #c6dd85);
+  background: linear-gradient(#c12929 85%, #c6dd85);
+  background-color: #c12929;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  padding: 20px 20px 0px 20px;
+}
+
+/* Contenedor del logotipo */
+.logo{left: 10px; top: -30px; align-content: 0px; width: 350px; height: 100px; float:left; position:relative;}
+
+/* modificamos los enlaces puestos en el logotipo, si exixen */
+.logo * a{
+  text-decoration: none;
+  color: #333;
+}
+
+/* Texto y márgenes para el subtítulo del logo */
+.subtitulo{
+  color: #EEE;
+  left: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0px;
+  text-align: left;
+}
+
+/* Contenedor para las opciones del menú, que se personalizan
+  en los siguientes estilos.*/
+.menu{  
+  float: right;
+  position: absolute;
+  margin-right: 15px;
+  right: 0px;
+  bottom: -15px;
+  margin-bottom: 0px;
+}
+/* Definimos el tipo de lista desordenada */
+.menu ul{
+  margin-right: 0;
+  padding: 0; 
+  list-style: none; 
+  float:right; 
+}
+/* Cada elemento de la lista tendrá un tamaño determinado
+  con un degradado desde la izquierda que va del verde
+  al blanco y termina en el mismo verde, una pequeña transparencia
+  y un redondeado de esquinas de 5px.
+  Se le pone un color de fondo liso por si el navegador no admite
+  los degradados*/
+.menu ul li {
+  float: left;
+  width: 105px;
+  margin-left:2px;
+  background: -webkit-linear-gradient(left, #c6dd85, #FFFFFF, #c6dd85);
+  background: -moz-linear-gradient(left, #c6dd85, #FFFFFF, #c6dd85);
+  background: -o-linear-gradient(left, #c6dd85, #FFFFFF, #c6dd85);
+  background: linear-gradient(left, #c6dd85, #FFFFFF, #c6dd85);
+  background-color: #c6dd85;
+  -moz-opacity: 0.75;
+  opacity: 0.75;
+  filter: alpha(opacity=75);/* Para IE8 y anteriores */
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+} 
+/* Los enlaces del menú no tendrán decoración, utilizaremos
+  una fuente pequeña de un color proximo al negro
+  que ocupará 2.1 veces del alto de la fuente, y en negrita */
+.menu ul li a {
+  display: block; 
+  line-height: 2.1em; 
+  text-decoration: none; 
+  color: #333;
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+  font-family: arial, sans-serif;
+} 
+/* Cuando nos posicionemos sobre una de las opciones, cambiará
+  el color de fondo con un degradado radial desde la izquierda
+  que va del verde al blanco y termina en el mismo verde.
+   Le damos el mismo radio de redondeo de esquinas anterior.
+  Se le pone un color de fondo por si el navegador no admite los degradados*/
+.menu ul li a:hover {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: -webkit-linear-gradient(left, #cdc323, #FFFFFF, #cdc323);
+  background: -moz-linear-gradient(left, #cdc323, #FFFFFF, #cdc323);
+  background: -o-linear-gradient(left, #cdc323, #FFFFFF, #cdc323);
+  background: linear-gradient(left, #cdc323, #FFFFFF, #cdc323);
+  background-color: #cdc323;
+}
+/* Definimos el tipo de lista desordenada para el menú de la Izquierda*/
+.menul{
+  float: left;
+  position: relative;
+  margin-right: 15px;
+  left: -355px;
+  bottom: -56px;
+  margin-bottom: 0px;
+}
+/* Definimos el tipo de lista desordenada */
+.menul ul{
+  margin-right: 0;
+  padding: 0;
+  list-style: none;
+  float:right;
+}
+/* Cada elemento de la lista tendrá un tamaño determinado
+  con un degradado desde la izquierda que va del verde al blanco
+  y termina en el mismo verde con una pequeña transparencia
+  y un redondeado de esquinas de 5px.
+  Se le pone un color de fondo liso por si el navegador no admite
+  los degradados*/
+.menul ul li {
+  float: left;
+  width: 105px;
+  margin-left:2px;
+  background: -webkit-linear-gradient(left, #c6dd85, #FFFFFF, #c6dd85);
+  background: -moz-linear-gradient(left, #c6dd85, #FFFFFF, #c6dd85);
+  background: -o-linear-gradient(left, #c6dd85, #FFFFFF, #c6dd85);
+  background: linear-gradient(left, #c6dd85, #FFFFFF, #c6dd85);
+  background-color: #c6dd85;
+  -moz-opacity: 0.75;
+  opacity: 0.75;
+  filter: alpha(opacity=75);/* Para IE8 y anteriores */
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+/* Los enlaces del menú no tendrán decoración, utilizarán
+  una fuente pequeña de un color proximo al negro
+  que ocupará 2.1 veces del alto de la fuente, y en negrita */
+.menul ul li a {
+  display: block;
+  line-height: 2.1em;
+  text-decoration: none;
+  color: #333;
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+  font-family: arial, sans-serif;
+}
+/* Si nos posicionemos sobre una de las opciones, cambiará
+  el color de fondo con un degradado radial desde la izquierda
+  que va del verde al blanco y termina en el mismo verde.
+  Le damos el mismo radio de redondeo de esquinas anterior.
+  Se le pone un color de fondo por si el navegador no admite los degradados*/
+.menul ul li a:hover {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: -webkit-linear-gradient(left, #cdc323, #FFFFFF, #cdc323);
+  background: -moz-linear-gradient(left, #cdc323, #FFFFFF, #cdc323);
+  background: -o-linear-gradient(left, #cdc323, #FFFFFF, #cdc323);
+  background: linear-gradient(left, #cdc323, #FFFFFF, #cdc323);
+  background-color: #cdc323;
+}
+/* Formato que tendrá la opción seleccionada.
+  Radio de esquinas de 5px, sombra del azul de la tarea que
+  al ponerla desde 0px sirve como resplandor, y color de fondo
+  degradado igual que el anterior. También ponemos un color de
+  fondo por si no se admite los degradados.
+  El color de letra se pone en #666666 */
+#activo {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 0px 0px 20px #3c7439;
+  -moz-box-shadow: ,0px 0px 20px #3c7439;
+  -webkit-box-shadow: ,0px 0px 20px #3c7439;
+  background: -webkit-linear-gradient(left, #cdc323, #FFFFFF, #cdc323);
+  background: -moz-linear-gradient(left, #cdc323, #FFFFFF, #cdc323);
+  background: -o-linear-gradient(left, #cdc323, #FFFFFF, #cdc323);
+  background: linear-gradient(left, #cdc323, #FFFFFF, #cdc323);
+  background-color: #cdc323;
+  color: #666;
+}
+/* Contenedor de todo el cuerpo de la página que va entre la
+  cabecera y el pie*/
+#cuerpo{
+  font-size: 15px;
+  float: left;
+  position: relative;
+  margin: 10px 0px 10px 0px;
+  top: 0px;
+  left: 0px;
+}
+/* Definimos el color de letra y grosor para todos los enlaces, si existen, que
+  situemos en el 'cuerpo' (ya que todos pertenecerán a otro contenedor
+  dentro de éste)*/
+#cuerpo * a{
+  color: firebrick;
+  font-weight: bold;
+}
+/* Definimos el texto y márgenes para todos los textos presentados en el
+  'cuerpo' con la etiqueta '<p>'*/
+#cuerpo * p{
+  text-align: justify;
+  margin: 0px 20px;
+}
+/* Definimos la decoración para el 'cuerpo' y el 'pie', aqui definimos el
+   marco que rodea la zona del cuerpo de la pagina y esta
+   decoración se personaliza para cada una de las paginas en los estilos
+   sigiuentes, en el siguiente estilo ".cajaSecundaria" se simplica la escritura
+  */
+.esquinas{
+  float: left;
+  position: absolute;
+  -moz-border-radius: 15px 15px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
+  -webkit-border-radius: 15px 15px 0px 0px;
+  border: #c12929 3px solid;
+  border-bottom: none;
+  width: 920px;
+  height: 290px;
+  left: 0px;
+  margin-left: 5px;
+  padding: 20px 20px 0px 20px;
+}
+/* Personalización del  Contenedor para las tres columnas que compondrá el 'cuerpo'
+    adaptando el tamaño en anchura de los elementos que vayamos a visualizar,
+    complementa al estilo ".esquinas"*/
+.esquinasIndex{
+  float: left;
+  position: absolute;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: #c12929 3px solid;
+  width: 920px;
+  height: 460px;
+  left: 0px;
+  margin-left: 5px;
+  padding: 20px 20px 20px 20px;
+}
+/* Personalización del  Contenedor para las tres columnas que compondrá el 'cuerpo'
+    adaptando el tamaño en anchura de los elementos que vayamos a visualizar,
+    complementa al estilo ".esquinas"*/
+.esquinasSotware{
+  float: left;
+  position: absolute;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: #c12929 3px solid;
+  width: 920px;
+  height: 640px;
+  left: 0px;
+  margin-left: 5px;
+  padding: 20px 20px 20px 20px;
+}
+/* Personalización del  Contenedor para las tres columnas que compondrá el 'cuerpo'
+    adaptando el tamaño en anchura de los elementos que vayamos a visualizar,
+    complementa al estilo ".esquinas"*/
+.esquinasOrdenadores{
+    float: left;
+    position: absolute;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border: #c12929 3px solid;
+    width: 920px;
+    height: 720px;
+    left: 0px;
+    margin-left: 5px;
+    padding: 20px 20px 20px 20px;
+}
+/* Personalización del  Contenedor para las tres columnas que compondrá el 'cuerpo'
+    adaptando el tamaño en anchura de los elementos que vayamos a visualizar,
+    complementa al estilo ".esquinas"*/
+.esquinasCableRedes{
+    float: left;
+    position: absolute;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border: #c12929 3px solid;
+    width: 920px;
+    height: 330px;
+    left: 0px;
+    margin-left: 5px;
+    padding: 20px 20px 20px 20px;
+}
+/* Personalización del  Contenedor para las tres columnas que compondrá el 'cuerpo'
+    adaptando el tamaño en anchura de los elementos que vayamos a visualizar,
+    complementa al estilo ".esquinas"*/
+.esquinasContacto{
+  float: left;
+  position: absolute;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: #c12929 3px solid;
+  width: 920px;
+  height: 576px;
+  left: 0px;
+  margin-left: 5px;
+  padding: 20px 20px 20px 20px;
+}
+/* Contenedor para las tres columnas que compondrá el 'cuerpo'*/
+.cajaSecundaria{
+  /* Con este efecto de las esquinas quedaría mejor y quitaríamos la capa 'esquinas'
+  -moz-border-radius: 15px 15px 100px 100px;
+  border-radius: 15px 15px 100px 100px;
+  -webkit-border-radius: 15px 15px 100px 100px;
+  border: #c6dd85 3px solid;
+  border-bottom: none;
+  background-color: white;
+  */
+  width: 920px;
+  float: left;
+  position: relative;
+  left: 0px;
+  margin-left: 5px;
+  padding: 20px 20px 0px 20px;
+  background-image: url("../img/fondot1.jpg");
+}
+/* Personalización del Contenedor para las tres columnas que compondrá el 'cuerpo'
+    adaptando el tamaño en anchura de los elementos que vayamos a visualizar,
+    complementa al estilo ".cajasecundaria"*/
+.cajasecundarioCentroDimensionOrdenadores{
+  width: 225px;
+}
+/* Personalización del  Contenedor para las tres columnas que compondrá el 'cuerpo'
+    adaptando el tamaño en anchura de los elementos que vayamos a visualizar,
+    complementa al estilo ".cajasecundaria"*/
+.cajasecundarioCentroDimensionSoftware{
+  width: 383px;
+}
+/* Personalización del  Contenedor para las tres columnas que compondrá el 'cuerpo'
+    adaptando el tamaño en anchura de los elementos que vayamos a visualizar,
+    complementa al estilo ".cajasecundaria"*/
+.cajasecundarioCentroDimensionCableRedes{
+  width: 383px;
+}
+/* Los listados y los enlaces que contengan saldrán en verde y con letra pequeña */
+.cajaSecundaria * li,
+.cajaSecundaria * li a:visited{
+  color: #c12929;
+  font-size: small;
+}
+
+/* Los enlaces de los listados (si se utilizan) saldrán en azul cuando nos posicionemos sobre ellos */
+.cajaSecundaria * li a:hover{
+  color: blue;
+}
+
+.cajaSecundariaCentro{
+  /* Con este efecto de las esquinas quedaría mejor y quitamos la capa 'esquinas' */
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  padding: 20px 20px 0px 20px;
+  border: #c6dd85 3px solid;
+  background-color: white;
+  float: left;
+  position: relative;
+  left: 0px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  }
+
+.centroTextoImagenes{
+  vertical-align: middle;
+}
+
+/* Contenedor para los distintos apartados, supuestos títulos de los mismos.
+  Redondeo las esquinas, se define la fuente y se utiliza un
+  padding para separar el texto de los bordes del recuadro .
+  También pongo un margen inferior para separar el texto siguiente
+  de este contenedor.
+*/
+.subtitu{
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  color: #3c7439;
+  font: 0.9em/1.4 Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+/* Estilo para el Logotipo creado con una imagen de fondo repetida,
+ si se decidiese aplicar imagen y el estilo de la fuente en caso de
+  usar Texto en lugar de imagen*/
+.logoPEPE{
+  float: left;
+  position: relative;
+  z-index: 10;
+  margin: 15px 15px 15px 15px;
+  background-color: #ebebeb;
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+  color: #c12929;
+  text-shadow: 0px 0px 1px #c12929;
+}
+/* Estilo que se usara en las áreas de contenido */
+
+.textPEPE{
+  position: relative;
+  z-index: 5;
+  margin: 5px 5px 5px 5px;
+  background-image: url("../img/fondot1.jpg");
+  background-color: #ebebeb;
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+  color: #c12929;
+  text-shadow: 0px 0px 1px #c12929;
+}
+/* El tipo de letra cursiva, algo más pequeña de lo normal y con separación de
+  20px por todos lados excepto por arriba*/
+.italica{
+  margin: 0px 20px 20px 20px;
+  font: 0.9em sans-serif, Arial, Helvetica;
+  font-style: italic;
+}
+/* Contenedor para las fechas que se sitúan a la derecha del subtítulo */
+.fecha{
+  float: right;
+  font: 0.75em Arial, Helvetica, sans-serif bold white;
+}
+
+/* Definimos el tipo y tamaño de la letra utilizada para finalizar las noticias
+  centrales */
+.peque{
+  font: 0.5em Arial, Helvetica, sans-serif;
+  font-size: smaller;
+}
+
+/* Contenedor de la columna de la derecha, con el tamaño y padding indicados
+  en la tarea */
+#derecha{
+  width: 180px;
+  height: 100%;
+  padding-left: 20px;
+  float: left;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+/* Definimos cómo queremos que aparezcan los enlaces en la columna de la izquierda */
+#izquierda * a{
+  text-decoration: none;
+  font: 0.8em sans-serif, Arial, Helvetica;
+}
+
+/* Contenedor para la parte inferior de la página, se restituye la opacidad al 100%,
+ se modifica en el estilo .imCentro */
+#pie{
+  color: #3c7439;
+  font-weight: bold;
+  font-size: small;
+  float: left;
+  position: relative;
+  margin: 10px 0px 10px 0px;
+  width: 33%;
+  height: 3em;
+  padding: 0px 0px 0px 0px;
+  opacity: 1;
+  filter: alpha(opacity=100); /* Para IE8 y anteriores */
+}
+
+/* Definimos los enlaces del pie de página de color verde, según la gama de colores*/
+#pie * a{
+  color: firebrick;
+}
+
+/* Formato para Texto e Imagenes que aparece en pie, a la imagen se la aplicado un
+ filtro Alpha de 85% para atenuar el rojo*/
+.imCentro{
+  color: #000000;
+  text-shadow: 1px 1px white, -1px -1px #333;
+  width: 915px;
+  height: 8em;
+  margin: 10px;
+  background-image: url("../img/pc.png");
+  opacity: 0.85;
+  filter: alpha(opacity=85); /* Para IE8 y anteriores */
+  -moz-border-radius: 15px 15px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
+  -webkit-border-radius: 15px 15px 0px 0px;
+  background-repeat: repeat-x;
+  text-align: center;
+}
+/* Estilo que se le aplica al mapa de la zona de contacto, con los bordes redondeados,
+  color del borde y posicionamiento */
+.mapa{
+  position: relative;
+  left: 110px;
+  width: 655px;
+  height: 333px;
+  margin: 5px 5px 5px 5px;
+  background-image: url(../img/zaragoza.jpg);
+  /* background:url(../img/zaragoza.jpg) center no-repeat;*/
+  background-color: #ebebeb;
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+  color: #c12929;
+  text-shadow: 0px 0px 1px #3c7439;
+  border: #3c7439 3px solid;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+  /* Contenedor de los botones de Idioma */
+.idioma{
+   position: absolute;
+   z-index: 100;
+   left: 915px;
+   top: 5px;
+   width: 40px;
+ }
+  /* Diseño de cada uno de los botones de Idiona*/
+.pais{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #ebebeb;
+  text-align: center;
+  border: #fff 3px solid;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+}

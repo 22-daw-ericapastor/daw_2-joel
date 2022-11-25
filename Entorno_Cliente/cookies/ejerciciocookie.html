@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio Cookie</title>
+        <script>
+            let date = new Date(Date.now());
+            date = date;
+            document.cookie = "localhost/";
+            document.cookie = "nombre=crear-cookie";
+            document.cookie = "nombre=Joel Capape";
+            document.cookie = "fecha=04-10-1998";
+            document.cookie = "expires="+ date;
+            function alertCookie() {
+            alert(document.cookie); // visualizar: nombre=crear-cookie;nombre=Joel Capape
+
+            }
+        </script>
+    </head>
+    <body on>
+        <button onclick="alertCookie()">Mostrar cookies</button>
+        <div ></div>
+    </body>
+</html>

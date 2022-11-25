@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var intervalo;
+        function iniciar(){
+            intervalo = setInterval(iniciarContador,1000);
+        }
+        function iniciarContador(){
+            document.form1.reloj.value = parseInt(document.form1.reloj.value) +
+                1;
+        }
+        function pararContador(){
+            window.clearInterval(intervalo);
+
+        }
+
+    </script>
+</head>
+<body>
+<CENTER><H1>C R O N O M E T R O</H1></CENTER>
+<FORM name="form1">
+    <center><INPUT type="text" id="reloj" value=0></center><br>
+        <input type="button" id="boton1" value="INICIO" onClick="iniciar()">
+        <input type="button" id="boton2" VALUE="PARAR" onClick="pararContador()">
+</FORM>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#hamnav label,input{
+    display: none;
+}
+#hamitems{
+    background-color: black;
+    display: block;
+}
+a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding-top: 3px;
+    width: 20%;
+    margin-right: -4px;
+    text-align: center;
+}
+a:hover{
+    background-color: red;
+}
+.esconder-resp{
+    display: none;
+}
+@media screen and (max-width: 580px){
+    #hamitems{
+        display: none;
+        width: 140px;
+    }
+    #hamnav label{
+        position: relative;
+        display: block;
+        background-color: red;
+        width: 30px;
+        color: aliceblue;
+        font-size: 20px;
+    }
+    #hamnav{
+        background-color: black;
+        height: max-content;
+        width: max-content;
+
+    }
+    input:checked ~ #hamitems{
+        display: block;
+    }
+    a{
+        
+        position: relative;
+        display: block;
+        white-space: nowrap;
+        width: 100%;
+        border-bottom: solid 1px green;
+    }
+    .esconder-resp{
+        display: block;
+        position: absolute;
+        top: -195px;
+
+    }
+}

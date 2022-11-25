@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #bandera{
+        display: none;
+    }
+    #hamburguesa{
+        position: relative;
+        background-color: darkslategrey;
+        display: inline-block;
+        width: 3em;
+        height: 3em;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    #hamburguesa span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 2em;
+        height: 0.2em;
+        background-color: black;
+        display: block;
+        border-radius: 3px;
+        margin: auto;
+    }
+    #hamburguesa span:before{
+        content: '';
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        bottom: inherit;
+        right: inherit;
+        background-color: black;
+        top: -0.6em;
+        border-radius: inherit;
+    }
+    #hamburguesa span:after{
+        content: '';
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        bottom: inherit;
+        right: inherit;
+        background-color: black;
+        top: 0.6em;
+        border-radius: inherit;
+    }
+    #hamburguesa span{
+        transition: background 0s 0.25s;
+    }
+    #hamburguesa span:before, #hamburguesa span:after{
+        transition-delay: .25s,0s;;
+        transition-duration: .25s, .25s;
+    }
+    #hamburguesa span:before{
+        transition-property: top, transform;
+
+    }
+    #hamburguesa span:after{
+        transition-property: bottom, transform;
+    }
+    #bandera:checked + span{
+        background: none;
+    }
+
+    #bandera:checked + span:before{
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    #bandera:checked + span:after{
+        bottom: 0;
+        transform: rotate(-45deg);
+    }
+    #bandera:checked +span:before, #bandera:checked + span:after{
+        transition-delay:0s,.25s
+    }
+
+
+</style>
+<body>
+    <label id="hamburguesa">
+        <input id="bandera" type="checkbox" name="boton-bandera" value="bandera">
+        <span></span>
+    </label>
+</body>
+</html>

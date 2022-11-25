@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practica 01- calculadora Joel Capape</title>
+    <style type="text/css" media="screen">
+        @import 'css/estilos.css';
+      </style>
+</head>
+<body id="inicio">
+
+    <div>
+        <select id="opciones">
+            <option value="#F73B20">Rojo</option>
+            <option value="#013CF7">Azul</option>
+            <option value="#23AB29">Verde</option>
+          </select>
+    </div>
+  
+    <table class="fondo">
+        <tr>
+            <td colspan="7">
+                <span id="resultado"></span>
+            </td>
+        </tr>
+        <!--FILA ESPECIAL-->
+        <tr>
+            <td><button value="mc" class="boton">MC</button></td>
+            <td><button value="mr" class="boton">MR</button></td>
+            <td><button value="ms" class="boton">MS</button></td>
+            <td><button value="m+" class="boton">M+</button></td>
+            <td><button value="m-" class="boton">M-</button></td>
+            <td><button id="pi">π</button></td>
+        </tr>
+                <!--FILA 1-->
+        <tr>
+            <td><button id="limpiar">CE</button></td>
+            <td><button id="borrar">&larr;</button></td>
+            <td><button id="porcentaje">%</button></td>
+            <td><button id="division">/</button></td>
+            <td><button id="raiz">√</button></td> 
+            <td><button id="simE"> Ë</button></td>
+        </tr>
+        <!--FILA 2-->
+        <tr>
+            <td><button id="siete" class="prueba">7</button></td>
+            <td><button id="ocho" class="prueba">8</button></td>
+            <td><button id="nueve" class="prueba">9</button></td>
+            <td><button id="multiplicar">x</button></td>
+            <td><button id="seno">sen</button></td>
+            <td><button id="logdiez" style="width: 100px;">Log<sub>10</sub></button></td>
+        </tr>
+        <!--FILA 3-->
+        <tr>
+            <td><button id="cuatro" class="prueba">4</button></td>
+            <td><button id="cinco" class="prueba">5</button></td>
+            <td><button id="seis" class="prueba">6</button></td>
+            <td><button id="resta">-</button></td>
+            <td><button id="cos">cos</button></td>
+            <td><button id="loge">Ln</button></td>
+        </tr>
+        <!--FILA 4-->
+        <tr>
+            <td><button id="uno" class="prueba">1</button></td>
+            <td><button id="dos" class="prueba">2</button></td>
+            <td><button id="tres" class="prueba">3</button></td>
+            <td><button id="suma">+</button></td>
+            <td><button id="tan">tan</button></td>
+            <td><button id="grafico">GR</button></td>
+        </tr>
+        <!--FILA 5-->
+        <tr>
+            <td><button id="cero" class="prueba">0</button></td>
+            <td><button id="inverso" class="prueba">+/-</button></td>
+            <td><button id="decimal" class="prueba">,</button></td>
+            <td colspan="2"><button id="logdos" style="width: 100%;">Log<sub>2</sub></button></td>
+            <td><button id="igual">=</button></td>
+        </tr>
+        
+    </table>
+
+
+    <script src="js/init.js"></script>
+</body>
+
+</html>

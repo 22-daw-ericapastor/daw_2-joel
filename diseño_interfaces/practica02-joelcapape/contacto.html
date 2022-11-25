@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mundo Viaje</title>
+		<style type="text/css" media="screen">
+        @import 'css/estilos.css';
+    	</style>
+		<link rel="shortcut icon" type="image/jpg" href="img/avion.png"/>
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="js/js.js"></script>
+	</head>
+	<body>
+		<span class="ir-arriba icon-arrow-up2"><img src="img/flecha-hacia-arriba.png"></span>
+		<header>
+			<img src="img/avion.png">
+			<h1>Mundo Viaje</h1>
+			<label for="pulsado" class="mostrar-resp">&#8801</label>
+			<input type="checkbox" id="pulsado">
+			<nav class="navegacion">
+				<a href="index.html">Inicio</a>
+				<a href="viajesamedida.html">Viajes a Medida</a>
+				<a href="ofertas.html">Ofertas</a>
+				<a href="superofertas.html">Super-Ofertas</a>
+				<a href="contacto.html">Contacto</a>
+				<a href="webIngles/contacto.html"><img src="img/reino-unido.png" class="banderas"></a>
+				<a href="#"><img src="img/espana.png" class="banderas"></a>
+				<label for="pulsado" class="esconder-resp">&#215</label>
+			</nav>
+		</header>
+		<section class="contacto">
+			<h4>Contacta con Nosotros</h4>
+			<form>
+				<div class="datos_formulario">
+					<div class="nombre">
+						<label for="nombre">Nombre</label>
+						<input type="text" id="nombre" placeholder="Introduce Nombre">
+					</div>
+					<div class="email">
+						<label for="email">Correo</label>
+						<input type="email" id="email" placeholder="Introduce Email">
+					</div>
+				</div>
+				<div class="mensaje">
+					<label for="Mensaje">Mensaje</label>
+					<textarea id="mensaje" cols="30" rows="10" placeholder="Introduce el Mensaje"></textarea>
+				</div>
+				<div class="btn_formulario">
+				<a href="#" class="btn_personal">Enviar Formulario</a>
+				</div>
+			</form>
+		</section>
+		<div id="mapa" class="contacto">
+			<div class="contenedor">
+				<h4>Donde Estamos</h4>
+			</div>
+			<div class="mapa-responsive">
+				<aside>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.891451171474!2d-0.9040130846291008!3d41.636477679242155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914591da4e16f%3A0xcb31a5bc8fd97f95!2sEstadio%20La%20Romareda!5e0!3m2!1ses!2ses!4v1642772580690!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</aside>
+			</div>
+		</div>
+		<section id="viajes" class="contacto">
+			<h4>Datos de Contacto</h4>
+		<div class="contenedor">
+			<div class="tarjeta-contacto">
+			<p>Envianos sus sugerencias a la siguiente dirección de correo: pagina@pagina.com</p>
+            <p>Les agradecemos su colaboración para mejorar nuestra página web</p>
+			<p>Nos puedes encontrar:<br>C/Lagasca, 25 Zaragoza 50010</p>
+        	</div>
+		</div>
+		</section>
+	</body>
+	<footer>
+        <p>&copy2022 Joel Capape Hernández</p>
+        <p>2º Desarrollo de Aplicaciones Web</p>
+	</footer>
+</html>

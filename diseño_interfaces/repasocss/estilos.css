@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#navegacion{
+    background-color: red;
+    height: 50px;
+    padding: 15px;
+}
+#cuerpo{
+    background-color: aqua;
+    width: 100%;
+    height: 800px;
+    padding: 15px;
+}
+#pie{
+    background-color: green;
+    height: 50px;
+    padding: 15px;
+}
+.menu{
+    position: relative;
+    color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+}
+#contacto{
+    float: right;
+}
+
+#contacto2{
+    float: right;
+    display: none;
+}
+
+@media screen and (max-width:580px){
+    #contacto{
+        display: none;
+    }
+    #contacto2{
+        display: block;
+    }
+    .menu{
+        display: block;
+    }
+    #navegacion{
+        padding: 20px;
+        max-width: max-content;
+    }
+    .opcion{
+        margin-left: 25px;
+    }
+
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 - Ejercicio 17</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="dist/css/bootstrapA.min.css">
+  <style>
+    hr{border: 2px solid #666; background-color: #fff; height: 6px; width:80%; border-radius:10px}
+  </style>
+  
+</head>
+<body>
+<hr>
+<div class="container">
+  <h2>Colapsable Simple</h2>
+  <p>Haga clic en el botón para alternar entre mostrar y ocultar el contenido.</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Colapsable Simple</button>
+  <div id="demo" class="collapse">
+    Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <h2>Colapsable Simple</h2>
+  <p>Haga clic en el botón para alternar entre ocultar y mostrar el contenido..</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">Simple collapsible</button>
+  <div id="demo1" class="collapse show">
+    Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <h2>Ejemplo de Acordeón</h2>
+  <p><strong>Nota:</strong> El <strong>data-parent</strong> atributo se asegura de que todos los elementos colapsables bajo el padre especificado se cierren cuando se muestra uno de los elementos colapsables.</p>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          Grupo Colapsable Item #1
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show">
+        <div class="card-body">
+          Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+          bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+          bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+          bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+          bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+          bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+          bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+          bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          Grupo Colapsable Entrada #2
+        </a>
+      </div>
+      <div id="collapseTwo" class="collapse">
+        <div class="card-body">
+          Ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble <br>
+          ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble<br>
+          ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble<br>
+          ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble<br>
+          ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble<br>
+          ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble<br>
+          ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble<br>
+          ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble<br>
+          ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble<br>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          Grupo Colapsable Entrada #3
+        </a>
+      </div>
+        <div id="collapseThree" class="collapse">
+          <div class="card-body">
+            Bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli <br>
+            bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli<br>
+            bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli<br>
+            bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli<br>
+            bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli<br>
+            bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli<br>
+            bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli<br>
+            bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli bli<br>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<hr>
+
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!--  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="dist/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 - Ejercicio 13</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="dist/css/bootstrapA.min.css">
+  <style>
+    hr{border: 2px solid #666; background-color: #fff; height: 6px; width:80%; border-radius:10px}
+  </style>
+  
+</head>
+<body>
+<hr>
+<div class="container">
+  <h2>Paginación</h2>
+  <p>Para crear una paginación básica, agreguamos la clase .pagination a un elemento ul. A continuación, agregue el elemento .page a cada elemento li y una clase .page-link a cada enlace dentro de li:</p>                  
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previo</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+  </ul>
+</div>
+<hr>
+<div class="container">
+  <h2>Paginación - Estado activo</h2>
+  <p>Agregamos clase .active para que el usuario sepa en qué página está</p>
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previo</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+  </ul>
+</div>
+<hr>
+<div class="container">
+  <h2>Paginación - Estado deshabilitado</h2>
+  <p>Agregamos class .disabled si una página por algún motivo está deshabilitada:</p>
+  <ul class="pagination">
+    <li class="page-item disabled"><a class="page-link" href="#">Previo</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+  </ul>
+</div>
+<hr>
+<div class="container">
+  <h2>Paginación - Dimensionamiento</h2>
+  <p>Agregamos la clase .pagination-lg para bloques más grandes o .pagination-sm para bloques más pequeños.</p>
+
+  <p>Grande:</p>
+  <ul class="pagination pagination-lg">
+    <li class="page-item"><a class="page-link" href="#">Previo</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+  </ul>
+
+  <p>Defecto:</p>
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previo</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+  </ul>
+
+  <p>Pequeño:</p>
+  <ul class="pagination pagination-sm">
+    <li class="page-item"><a class="page-link" href="#">Previo</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+  </ul>
+</div>
+<hr>
+<div class="container">
+  <h2>Migas de pan</h2>
+  <p>La clase .breadcrumb indica la ubicación de la página actual dentro de una jerarquía de navegación</p>                  
+  <ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Photos</a></li>
+    <li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
+    <li class="breadcrumb-item"><a href="#">Italy</a></li>
+    <li class="breadcrumb-item active">Rome</li>
+  </ul>
+</div>
+<hr>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!--  -->  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="dist/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html> 

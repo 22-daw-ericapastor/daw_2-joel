@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AJAX - EJEMPLO</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+ integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+ crossorigin=""></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	</head>
+	<body class="m-0 row justify-content-center align-items-center">
+        <style>
+            #map { height: 180px; }
+
+        </style>
+        <select name="color1">
+            <option value="0">Selecciona una opción</option>
+         <option value="azul">Azul</option>
+         <option value="rojo">Rojo</option>
+         </select>
+         <div id="map"></div>
+ <div class="col auto p-5 text-center">
+
+    <div class="col-sm-8">
+
+        
+
+<div class="panel">
+
+                    <button class="btn btn-outline-primary" id="btn_tabla">click</button>
+
+            <div class="panel-hdr">
+
+
+            </div>
+    <div class="panel-container show">
+                <div class="panel-content">
+
+                    <!-- datatable start -->
+            <div class="row">
+
+                <div class="col-xl-12">
+
+                      <!-- datatable start -->
+
+                        <table id="example" class="table table-bordered" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <td>Titulo</td>
+                                    <td>Horario</td>
+                                    <td>Coordenadas</td>
+                                </tr>
+                            </thead>      
+                            </table>
+
+                        <!-- datatable end -->
+
+                </div>
+
+            </div>
+                            
+
+               
+            </div>
+    </div>
+</div>
+
+
+
+    </div>
+
+                </div>
+		<script>
+		$(document).ready(function() {
+
+            $("select[name=color1]").change(function(){
+            alert($('select[name=color1]').val());
+            $('input[name=valor1]').val($(this).val());
+        });
+	$("#ejemplo2").change(function(){
+            alert($('select[id=ejemplo2]').val());
+            $('#valor2').val($(this).val());
+	});
+	$(".ejemplo3").change(function(){
+            alert($('select[class=ejemplo3]').val());
+            $('.valor3').val($(this).val());
+	});
+           
+
+                
+            var map = L.map('map').setView([51.505, -0.09], 13);
+            L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'your.mapbox.access.token'
+}).addTo(map);
+            $('#btn_tabla').click(function () {
+            
+                        $.ajax({
+
+    type: "GET",
+    dataType: "json",
+    url:'//www.zaragoza.es/sede/servicio/monumento.json?rows=100&fl=title,horario,geometry',
+})
+ .done(function( data, textStatus, jqXHR ) {
+     if ( console && console.log ) {
+         console.log( "La solicitud se ha completado correctamente." );
+         resultados = data.result;
+         var tabla = document.getElementById('example');
+         var cuerpo = document.createElement('tbody');
+         tabla.appendChild(cuerpo);
+         for(i=0;i<resultados.length;i++){
+            var filas = document.createElement('tr');
+            cuerpo.appendChild(filas);
+            celdas = document.createElement('td');
+            celdas2 = document.createElement('td');
+            celdas3 = document.createElement('td');
+            celdas.innerHTML = resultados[i].title;
+            if((resultados[i].horario == undefined) || (resultados[i].geometry == undefined)){
+                //console.log('hola');
+            }else{
+                //console.log('adios');
+                coordenadas = resultados[i].geometry.coordinates[0] + " , " +  resultados[i].geometry.coordinates[1];
+                //console.log(coordenadas);
+               celdas2.innerHTML = resultados[i].horario;
+               celdas3.innerHTML = coordenadas;
+            }
+            filas.appendChild(celdas);
+            filas.appendChild(celdas2);
+            filas.appendChild(celdas3);
+         }
+
+         console.log(resultados);
+         $('#example').DataTable();
+        
+
+     }
+ })
+ .fail(function( jqXHR, textStatus, errorThrown ) {
+     if ( console && console.log ) {
+         console.log( "La solicitud a fallado: " +  textStatus);
+     }
+});
+             $("#btn_tabla").prop('disabled',true)
+            
+            return false;
+            });
+    
+   
+} );
+	</script>
+	</body>
+</html>

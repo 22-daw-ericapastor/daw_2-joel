@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Posicionamiento Por Tablas</title>
+    <style type="text/css" media="screen">
+        @import 'css/estilos.css';
+    </style>
+    <link rel="shortcut icon" type="image/jpg" href="img/avion.png"/>
+</head>
+<body>
+
+    <table class="encabezado" align="center">
+        <tr>
+            <td><img class="imagen" src="img/avion.png" alt="[LOGO]"></td>
+            <td>
+
+                <h1>Mundo Viajes</h1></td>
+        </tr>
+    </table>
+
+<br></br>
+<table class="navegacion">
+    <tr>
+        <td class="menu">
+            <a href="index.html" class="btn-custom">Inicio</a>
+            <a href="viajes-medida.html" class="btn-custom">Viajes&nbsp;a&nbsp;Medida</a>
+            <a href="ofertas.html" class="btn-custom">Ofertas</a>
+            <a href="super.html" class="btn-custom">Super-Ofertas</a>
+            <a href="contacto.html" class="btn-custom">Contacto</a>
+            <a href="#" class="btn-custom">Español</a>
+            <a href="pagina_ingles/contacto.html" class="btn-custom">Inglés</a>
+
+        </td>
+    </tr>
+</table>
+<br>
+
+<!--TABLA QUE ME SERVIRA PARA GUARDAR EL CONTENIDO-->
+<br></br>
+<table class="interior" cellspacing="0" cellpadding="0">
+    <tr>
+        <td class="contenido" colspan="2">
+
+
+
+            <!--CUERPO PRINCIPAL EXPLICACIÓN DE A QUE SE DEDICA LA EMPRESA-->
+
+            <table class="ancho">
+                <tr>
+                    <td>
+                        <h2  class="centrado">Estamos Ubicados</h2>
+                        <aside>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.891451171477!2d-0.9040130846058719!3d41.63647767924209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914591da4e16f%3A0xcb31a5bc8fd97f95!2sEstadio%20La%20Romareda!5e0!3m2!1ses!2ses!4v1636651783534!5m2!1ses!2ses"
+                             allowfullscreen="" loading="lazy"></iframe>
+                        </aside>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<br></br>
+
+<!--PARTE QUE DESCRIBE QUIENES SOMOS-->
+
+<br></br>
+ <table class="interior" cellspacing="0" cellpadding="0">
+    <tr>
+        <td class="contenido" colspan="2">
+
+
+
+            <!--CUERPO PRINCIPAL EXPLICACIÓN DE A QUE SE DEDICA LA EMPRESA-->
+
+            <table class="ancho">
+                <tr>
+                    <td><!-- texto -->
+                        <h2 class="centrado">Contactar</h2>
+                        <form action="submeter-formulario.php" method="post">
+
+
+                            <p>
+                                <label for="nombre" class="colocar_nombre">Nombre
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                            </p>
+
+                            <p>
+                                <label for="email" class="colocar_email">Email
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                            </p>
+
+                            <p>
+                                <label for="telefone" class="colocar_telefono">Teléfono
+                                </label>
+                                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                            </p>
+
+                            <p>
+                                <label for="asunto" class="colocar_asunto">Asunto
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                            </p>
+
+                            <p>
+                                <label for="mensaje" class="colocar_mensaje">Mensaje
+                                    <span class="obligatorio">*</span>
+                                </label>
+                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                            </p>
+
+                            <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                            <p class="aviso">
+                                <span class="obligatorio"> * </span>los campos son obligatorios.
+                            </p>
+
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+    <!--PIE DE PÁGINA-->
+
+
+    <br></br>
+    <table align="center">
+    <tr>
+    <td><h2 class="centrado">Datos de Contacto</h2></td>
+    </tr>
+    </table>
+ 
+
+    <!--CUERPO DEL PIE DE PÁGINA-->
+
+    <table class="interior" cellspacing="0" cellpadding="0">
+    <tr>
+        <td class="contenido" colspan="2">
+
+
+
+            <!--CONTENIDO DEL PIE DE PÁGINA-->
+
+            <table class="ancho">
+                <tr>
+                    <td>
+                        <p>Envianos sus sugerencias a la siguiente dirección de correo: pagina@pagina.com</p>
+                        <p>También nos puede llamar al 977-43-43-43</p>
+                        <p>Les agradecemos su colaboración para mejorar nuestra página web</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0px 0px 0px 50px"><!-- texto -->
+                        <p>
+                        Web Realizada por Joel Capape<br>
+                        Copyright @ 2021 Mundo Viaje - Agencia de Viajes<br>
+                        Última Actualización 10-11-2021
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #e9e9e9;
+	color: #2e2e2e;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto; 
+}
+
+h1 {
+	margin: 20px 0;
+	text-align: center;
+	color: #161E54;
+	font-weight: normal;
+}
+
+.paginacion ul {
+	list-style: none;
+
+}
+
+.paginacion ul li {
+	display: inline-block;
+	margin-right: 10px; 
+}
+
+.paginacion ul .active a {
+	background: #FF5151;
+}
+
+.paginacion ul .disabled {
+	background: #c8c8c8;
+	display: inline-block;
+	padding: 5px 15px;
+	cursor:not-allowed;
+	color:#fff;
+	text-decoration: none;
+}
+
+.paginacion ul li a {
+	display: inline-block;
+	padding: 5px 15px;
+	background: #88E0EF;
+	color:#fff;
+	text-decoration: none;
+}
+
+.paginacion ul li a:hover {
+	text-decoration: none;
+	background: #3299bb;
+}
+
+/*.paginacion {
+    height: 36px;
+    margin: 18px 0;
+}
+.paginacion ul {
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+.paginacion li {
+    display: inline;
+}
+.paginacion a {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #DDDDDD;
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+    float: left;
+    line-height: 34px;
+    padding: 0 14px;
+    text-decoration: none;
+}
+.paginacion a:hover, .paginacion .active a {
+    background-color: #F5F5F5;
+}
+.paginacion .active a {
+    color: #999999;
+    cursor: default;
+}
+.paginacion .disabled a, .paginacion .disabled a:hover {
+    background-color: transparent;
+    color: #999999;
+    cursor: default;
+}
+.paginacion li:first-child a {
+    border-left-width: 1px;
+    border-radius: 3px 0 0 3px;
+}
+.paginacion li:last-child a {
+    border-radius: 0 3px 3px 0;
+}
+.paginacion-centered {
+    text-align: center;
+}
+.paginacion-right {
+    text-align: right;
+}
+*/

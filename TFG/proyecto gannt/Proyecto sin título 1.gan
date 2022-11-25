@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Proyecto Comida Sana" company="" webLink="http://" view-date="2022-03-31" view-index="0" gantt-divider-location="1172" resource-divider-location="300" version="3.2.3240" locale="es_ES">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="574" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="215" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="111" order="2"/>
+        <field id="tpd6" name="Duración" width="63" order="3"/>
+        <field id="tpd13" name="Recursos" width="208" order="4"/>
+        <option id="filter.completedTasks" value="false"/>
+        <timeline>
+            <![CDATA[0,1]]>
+        </timeline>
+        <option id="color.recent">
+            <![CDATA[#66ff66 #3333ff #00ffcc #cc00cc #ffcc00 #66ff00 #ffcc33 #ff3333]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="210" order="0"/>
+        <field id="1" name="Función" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="2022" month="5" date="2" type="HOLIDAY" color="#ff3333">
+            <![CDATA[Dia del Trabajador]]>
+        </date>
+        <date year="2022" month="4" date="13" type="HOLIDAY" color="#ff3333">
+            <![CDATA[Semana Santa]]>
+        </date>
+        <date year="2022" month="4" date="14" type="HOLIDAY" color="#ff3333">
+            <![CDATA[Semana Santa]]>
+        </date>
+        <date year="2022" month="4" date="15" type="HOLIDAY" color="#ff3333">
+            <![CDATA[Semana Santa]]>
+        </date>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Proyecto Comida Sana" color="#ffcc33" meeting="false" start="2022-03-21" duration="58" complete="0" thirdDate="2022-03-31" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Inicio del Proyecto de la Aplicación Sobre Comida Saludable]]>
+            </notes>
+        </task>
+        <task id="1" name="Fase de Análisis" color="#66ff00" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="false" start="2022-03-21" duration="8" complete="0" thirdDate="2022-03-31" thirdDate-constraint="0" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+            <task id="2" name="Reunión Inicial para puesta en marcha" color="#8cb6ce" meeting="false" start="2022-03-21" duration="1" complete="0" thirdDate="2022-03-15" thirdDate-constraint="0" expand="true">
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="3" name="Desarrollo de Ideas" color="#8cb6ce" meeting="false" start="2022-03-22" duration="6" complete="0" thirdDate="2022-03-17" thirdDate-constraint="0" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="4" name="Reunión con el Cliente y puesta en Común de las Ideas" color="#8cb6ce" meeting="false" start="2022-03-30" duration="1" complete="0" thirdDate="2022-03-17" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="6" name="Fase de Diseño" color="#ffcc00" meeting="false" start="2022-03-31" duration="5" complete="0" thirdDate="2022-03-17" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[En esta Fase comenzaremos a diseñar la estructura de la base de datos, los casos de usabilidad de la aplicación y empezaremos a diseñar una interfaz para nuestra aplicación
+]]>
+            </notes>
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+            <task id="8" name="Diseño de Base de Datos" color="#8cb6ce" meeting="false" start="2022-03-31" duration="1" complete="0" thirdDate="2022-03-17" thirdDate-constraint="0" expand="true"/>
+            <task id="9" name="Diseño de Casos de Uso" color="#8cb6ce" meeting="false" start="2022-04-01" duration="1" complete="0" thirdDate="2022-03-17" thirdDate-constraint="0" expand="true"/>
+            <task id="10" name="Diseño de la Interfaz de la App" color="#8cb6ce" meeting="false" start="2022-04-04" duration="3" complete="0" thirdDate="2022-03-17" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="11" name="Fase de Codificación de la Aplicación" color="#cc00cc" meeting="false" start="2022-04-07" duration="27" complete="0" thirdDate="2022-04-07" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[En esta fase donde ya se empiezan a definir las primeras líneas de código de la aplicación, se intentará en la medida de lo posible ir comentando a la vez el código de la misma. Pero como no siempre es así, después del desarrollo de la aplicación, se dejará una semana para comentar el código]]>
+            </notes>
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+            <task id="12" name="Programación de la Aplicación" color="#8cb6ce" meeting="false" start="2022-04-07" duration="21" complete="0" thirdDate="2022-03-17" thirdDate-constraint="0" expand="true">
+                <depend id="13" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="13" name="Documentar Código" color="#8cb6ce" meeting="false" start="2022-05-12" duration="6" complete="0" thirdDate="2022-03-17" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="14" name="Fase de Test" color="#00ffcc" meeting="false" start="2022-05-20" duration="8" complete="0" thirdDate="2022-05-12" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Las pruebas generales las realizará el grupo 1 mientras que el grupo 2 realizará las pruebas especificas]]>
+            </notes>
+            <depend id="18" type="2" difference="0" hardness="Strong"/>
+            <task id="15" name="Pruebas Generales" color="#8cb6ce" meeting="false" start="2022-05-20" duration="4" complete="0" thirdDate="2022-04-08" thirdDate-constraint="0" expand="true">
+                <depend id="17" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="16" name="Pruebas Especifícas" color="#8cb6ce" meeting="false" start="2022-05-20" duration="7" complete="0" thirdDate="2022-04-08" thirdDate-constraint="0" expand="true">
+                <depend id="17" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="17" name="Reunión para el Análisis de las Pruebas" color="#8cb6ce" meeting="false" start="2022-05-31" duration="1" complete="0" thirdDate="2022-05-20" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="18" name="Fase de Documentación" color="#3333ff" meeting="false" start="2022-06-01" duration="7" complete="0" thirdDate="2022-06-01" thirdDate-constraint="0" expand="true">
+            <depend id="20" type="2" difference="0" hardness="Strong"/>
+            <task id="19" name="Desarrollo del Manual de Usuario" color="#8cb6ce" meeting="false" start="2022-06-01" duration="7" complete="0" thirdDate="2022-04-22" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="20" name="Fase de Despliegue de la Aplicación" color="#66ff66" meeting="false" start="2022-06-10" duration="3" complete="0" thirdDate="2022-06-10" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[El grupo 1 definirá el software mientras que el grupo 2 definirá el Hardware
+Luego ambos grupos harán la implementación pertinente en el servidor
+]]>
+            </notes>
+            <task id="21" name="Definir Hardware" color="#8cb6ce" meeting="false" start="2022-06-10" duration="1" complete="0" thirdDate="2022-04-22" thirdDate-constraint="0" expand="true">
+                <depend id="23" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="22" name="Definir Software" color="#8cb6ce" meeting="false" start="2022-06-13" duration="1" complete="0" thirdDate="2022-04-22" thirdDate-constraint="0" expand="true">
+                <depend id="23" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="23" name="Implementación en el Servidor" color="#8cb6ce" meeting="false" start="2022-06-14" duration="1" complete="0" thirdDate="2022-04-22" thirdDate-constraint="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Carmen" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Joel Capape" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Alejandro Arteaga" function="Default:0" contacts="" phone=""/>
+        <resource id="3" name="Diego Hernando" function="Default:0" contacts="" phone=""/>
+        <resource id="4" name="Oscar Bailon" function="Default:0" contacts="" phone=""/>
+        <resource id="5" name="David Avenia" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="3" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="10" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="10" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="10" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="21" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

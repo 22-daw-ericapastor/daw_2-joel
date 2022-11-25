@@ -1,0 +1,226 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+
+/*
+DEFINICIÓN DE LOS COLORES
+
+COLOR DEL FONDO DE LA PÁGINA -> #f6f6f6 (Blanco tráfico);
+COLOR DEL ENCABEZADO ->
+COLOR DEL CUERPO ->
+COLOR DE LOS BTNS {
+        color de la letra -> black
+        borde -> #fff
+
+}
+COLOR DEL PIE DE PÁGINA ->
+
+
+*/
+
+body{
+    background-color: #A6E3D0;
+}
+
+/*
+
+            --ENCABEZADO--
+
+*/
+table.encabezado{
+    box-align:center;
+    background-color: #22577A;
+    width: 100%;
+    color: #ffffff;
+}
+.imagen{
+    margin-left: 85%;
+}
+table tr td h1,h2{
+    font-family: 'Birthstone', cursive;
+    font-size: 50px;
+}
+h1{
+    margin-left: 10%;
+}
+
+table tr td.menu{
+
+    padding: 0px 0.8em;
+}
+
+table.navegacion{
+    margin-left: 29%;
+}
+
+table tr td{
+    padding: 0px 0px 0px 50px;
+}
+
+table tr td a.btn-custom {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #38A3A5;
+    transition: background-color .5s;
+    border-radius: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+}
+
+table tr td a:visited {
+
+    text-decoration: none;
+}
+
+table tr td a:hover {
+  background-color: #80ED99;
+
+}
+table tr td p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+table tr td h2.centrado{
+    text-align:center;
+
+}
+img.productos{
+    width: 310px;
+    height: 200px;
+    border-radius: 25px;
+    box-shadow: rgba(0,0,0,0.3) 12px 0px 0px 5px;
+    
+}
+table.contenedorProductos{
+    margin-left: 8%;
+}
+table.contenedorSuper{
+    margin-left: 26%;
+}
+iframe{
+    margin-left: 50px;
+}
+/*
+
+            -- ESTILO DEL FORMULARIO--
+
+*/
+
+form{
+    margin-left: 18%;
+}
+
+.contact_form{
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #fbfbfb;
+    padding-left: 30px;
+
+}
+
+
+input{
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+textarea{
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+
+label{
+    display: block;
+    float: center;
+}
+
+
+button{
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #38A3A5;
+    border-color: #38A3A5;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+    cursor: pointer;
+}
+
+
+button p{
+    color: #fff;
+}
+
+
+span{
+    color: #22577A;
+}
+
+
+.aviso{
+    font-size: 13px;
+    color: #0e0e0e;
+}
+
+h3{
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: #0e0e0e;
+}
+
+
+p{
+    font-size: 14px;
+    color: #0e0e0e;
+}
+
+
+::-webkit-input-placeholder {
+    color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+    color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+}

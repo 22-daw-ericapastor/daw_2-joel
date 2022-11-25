@@ -1,0 +1,57 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#encabezado{
+    background-color: goldenrod;
+    padding: 10px;
+}
+
+#cuerpo{
+    background-color: brown;
+    width: 100%;
+    height: 800px;
+}
+.letras{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.4em;
+    font-size: 20px;
+    padding: 5px;
+}
+#pie{
+    background-color: burlywood;
+    width: 100%;
+    height: 120px;
+}
+.contacto{
+    float: right;
+}
+.contacto-pie{
+    display: none;
+}
+.contacto-encabezado{
+    display: inline-block;
+}
+.menu{
+    display: inline-block;
+}
+
+@media screen and (max-width: 580px){
+    .contacto-encabezado{
+        display: none;
+    }
+    .contacto-pie{
+        display: inline-block;
+    }
+    .menu{
+        display:block;
+    }
+    .menu2{
+        position: relative;
+        margin-left: 15px;
+    }
+    #encabezado{
+        width: max-content;
+    }
+}

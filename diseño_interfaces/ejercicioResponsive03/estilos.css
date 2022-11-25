@@ -1,0 +1,165 @@
+*{
+    margin: 0%;
+}
+/*color al label -> label y span son elementos inline
+
+inline-block se comporta como bloque pero no hace el salto de linea
+
+*/
+/*Con la position relative se adapta al contenedor donde esta para que no haga
+referencia a otro sitio
+*/
+#hamburguesa{
+    position: relative;
+    cursor: pointer;
+    background-color: lightblue;
+    display: block;
+    width: 4em;
+    height: 4em;
+    border-radius: 10px;
+    margin: 20px;
+}
+#bandera{
+    display: none;
+}
+#hamburguesa span{
+    position: absolute;
+    width: 3em;
+    height: 0.2em;
+    background-color: coral;
+    display: block;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+#hamburguesa span:before{
+    content: '';
+    position: absolute;
+    background-color: green;
+    width: inherit;
+    height: inherit;
+    bottom: initial;
+    top: -10px;
+
+}
+#hamburguesa span:after{
+    content: '';
+    position: absolute;
+    background-color: green;
+    width: inherit;
+    height: inherit;
+    bottom: -10px;
+    top: initial;
+}
+
+
+/*
+    TRANSITION DEL MENÚ DE HAMBURGUESA
+
+*/
+
+#hamburguesa span{
+    transition: background 0s 0.25s;
+}
+#hamburguesa span:before, #hamburguesa span:after{
+    transition-delay: .25s,0s;;
+    transition-duration: .25s, .25s;
+}
+#hamburguesa span:before{
+    transition-property: top, transform;
+
+}
+#hamburguesa span:after{
+    transition-property: top, transform;
+}
+#bandera:checked + span{
+    background: none;
+}
+
+#bandera:checked + span:before{
+    top: 0;
+    transform: rotate(45deg);
+}
+#bandera:checked + span:after{
+    top: 0;
+    transform: rotate(-45deg);
+}
+#bandera:checked +span:before, #bandera:checked + span:after{
+    transition-delay:0s,.25s
+}
+	.navegacion{
+		position: fixed;
+		width: 100%;
+		height: 80vh;
+		left: 100%;
+		top: 0;
+		text-align: center;
+		padding: 100px 0px;
+		z-index: 100;
+		background-color: #22577A;
+		transition: 0.8s;
+	}
+
+	.navegacion a{
+		display: block;
+		padding: 20px;
+		border-radius: 0px;
+	}
+	.esconder-resp{
+		position: absolute;
+		top: 40px;
+		right: 40px;
+	}
+
+	#bandera:checked ~ .navegacion{
+		left: 0;
+	}
+
+    @media(max-width: 810px){
+
+        /* MENU DE NAVEGACION */
+    
+        .mostrar-resp,.esconder-resp{
+    
+        display: block;
+    
+        }
+    
+        h2{
+            display: block;
+        }
+    
+        .navegacion{
+            position: fixed;
+            width: 100%;
+            height: 80vh;
+            left: 100%;
+            top: 0;
+            text-align: center;
+            padding: 100px 0px;
+            z-index: 100;
+            background-color: #22577A;
+            transition: 0.8s;
+        }
+    
+        .navegacion a{
+            display: block;
+            padding: 20px;
+            border-radius: 0px;
+        }
+        .esconder-resp{
+            position: absolute;
+            top: 40px;
+            right: 40px;
+        }
+        .esconder-resp:hover{
+            transition: 10s;
+            transform: rotate(360deg);
+        }
+        #pulsado:checked ~ .navegacion{
+            left: 0;
+        }
+    }
+

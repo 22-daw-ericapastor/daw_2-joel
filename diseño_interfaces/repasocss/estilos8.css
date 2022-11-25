@@ -1,0 +1,23 @@
+#capa{
+    background-color: gray;
+    width: 800px;
+    height: 200px;
+}
+#capa2{
+    position: relative;
+    background-color: lightgray;
+    width: 700px;
+    height: 150px;
+    display: block;
+    margin-left: 30px;
+    top: 30px;
+}
+#capa3{
+    position: relative;
+    background-color: aliceblue;
+    width: 600px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 50px;
+    top: 30px;
+}

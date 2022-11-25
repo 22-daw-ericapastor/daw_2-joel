@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    /*Solo se sobrescriben los estilos si hay concidencia de etiquetas*/
+    a.dos:hover[title~="ENLACE"]{ background-color:red; }
+    a:hover
+    {
+       background-color: greenyellow;
+    }
+
+</style>
+
+<a title="ENLACE A" href=”http://www.fundacionmontessori.com” class="dos">HIJO4</a></div>
+<a title="ENLACE B" href=”http://www.colegiomontessori.com”>HIJO4</a></div>
+<a title="APARTADO C" href=”http://www.montessorikids.es”>HIJO4</a></div>
+</body>
+</html>

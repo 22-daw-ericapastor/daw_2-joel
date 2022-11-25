@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablero de Ajedrez</title>
+    <style type="text/css">
+        #cuadros {
+            overflow:hidden;
+        }
+        .cuadrado1{
+            border:solid 1px;
+            width:40px;
+            height:40px;
+            background-color:white;
+            float:left;
+        }
+        .cuadrado2{
+        border:solid 1px;
+            width: 40px;
+            height:40px;
+            background-color:black;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+
+<div><button onclick="genera_tabla()">Generar</button></div>
+<div id="cuadros"></div>
+<script>
+    function genera_tabla() {
+
+        var cantidad=64;
+        document.getElementById('cuadros').innerHTML='';
+        document.getElementById('cuadros').style.width = ((2 + parseInt(40)) * 8) + "px";
+
+        for (var i=0;i<cantidad;i++){
+            var impar_par = Math.floor(i/8)%2;
+            console.log(impar_par);
+            if(impar_par == i%2){
+                //celdas pares
+                document.getElementById('cuadros').innerHTML+='<div id="cuadros" class="cuadrado1"><p></p><div>';
+            }else{
+                //celdas impares
+                document.getElementById('cuadros').innerHTML+='<div id="cuadros" class="cuadrado2"><div>';
+
+            }
+        }
+    }
+</script>
+</body>
+</html>

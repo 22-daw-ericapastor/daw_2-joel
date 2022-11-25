@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pagina con Posicionamiento de Divs</title>
+	<style type="text/css" media="screen">
+        @import 'css/estilos.css';
+    </style>
+	<link rel="shortcut icon" type="image/jpg" href="img/avion.png"/>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/js.js"></script>
+</head>
+<body>
+	<span class="ir-arriba icon-arrow-up2"><img src="img/flecha-hacia-arriba.png"></span>
+	<header>
+		<img src="img/avion.png">
+		<h1>Mundo Viaje</h1>
+		<label for="pulsado" class="mostrar-resp">&#8801</label>
+		<input type="checkbox" id="pulsado">
+		<nav class="navegacion">
+			<a href="index.html">Inicio</a>
+				<a href="viajesamedida.html">Viajes a Medida</a>
+				<a href="ofertas.html">Ofertas</a>
+				<a href="superofertas.html">Super-Ofertas</a>
+				<a href="contacto.html">Contacto</a>
+				<a href="webIngles/superofertas.html"><img src="img/reino-unido.png" class="banderas"></a>
+				<a href="#"><img src="img/espana.png" class="banderas"></a>
+			<label for="pulsado" class="esconder-resp">&#215</label>
+		</nav>
+	</header>
+	<div id="viajes" class="viajes">
+		<h2>Super Ofertas</h2>
+		<ul class="galeria">
+		<li><a href="#img1"><img src="img/pA1.jpg"></a><p>Destino 1</p></li>
+		<li><a href="#img2"><img src="img/pA2.jpg"></a><p>Destino 2</p></li>
+		<li><a href="#img3"><img src="img/pA3.jpg"></a><p>Destino 3</p></li>
+		<li><a href="#img4"><img src="img/pA4.jpg"></a><p>Destino 4</p></li>
+		</ul>
+
+	<div class="modal" id="img1">
+		<h3>Destino 1</h3>
+		<div class="imagen">
+			<a href="#img4">&#60;</a>
+			<a href="#img2"><img src="img/pA1.jpg"></a>
+			<a href="#img2">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img2">
+		<h3>Destino 2</h3>
+		<div class="imagen">
+			<a href="#img1">&#60;</a>
+			<a href="#img3"><img src="img/pA2.jpg"></a>
+			<a href="#img3">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img3">
+		<h3>Destino 3</h3>
+		<div class="imagen">
+			<a href="#img2">&#60;</a>
+			<a href="#img4"><img src="img/pA3.jpg"></a>
+			<a href="#img4">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img4">
+		<h3>Destino 4</h3>
+		<div class="imagen">
+			<a href="#img3">&#60;</a>
+			<a href="#img1"><img src="img/pA4.jpg"></a>
+			<a href="#img1">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	</div>
+
+	</div>
+	<footer>
+        <p>&copy2022 Joel Capape Hernández</p>
+        <p>2º Desarrollo de Aplicaciones Web</p>
+	</footer>
+	
+</div>
+</body>
+</html>

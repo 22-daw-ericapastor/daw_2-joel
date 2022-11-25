@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pagina con Posicionamiento de Divs</title>
+	<style type="text/css" media="screen">
+        @import 'css/estilos.css';
+    </style>
+	<link rel="shortcut icon" type="image/jpg" href="img/avion.png"/>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/js.js"></script>
+</head>
+<body>
+	<span class="ir-arriba icon-arrow-up2"><img src="img/flecha-hacia-arriba.png"></span>
+	<header>
+		<img src="img/avion.png">
+		<h1>Mundo Viaje</h1>
+		<label for="pulsado" class="mostrar-resp">&#8801</label>
+		<input type="checkbox" id="pulsado">
+		<nav class="navegacion">
+			<a href="index.html">Inicio</a>
+				<a href="viajesamedida.html">Viajes a Medida</a>
+				<a href="ofertas.html">Ofertas</a>
+				<a href="superofertas.html">Super-Ofertas</a>
+				<a href="contacto.html">Contacto</a>
+				<a href="webIngles/viajesamedida.html"><img src="img/reino-unido.png" class="banderas"></a>
+				<a href="#"><img src="img/espana.png" class="banderas"></a>
+			<label for="pulsado" class="esconder-resp">&#215</label>
+		</nav>
+	</header>
+	<div id="viajes" class="viajes">
+		<h2>Viajes a Medida</h2>
+		<ul class="galeria">
+		<li><a href="#img1"><img src="img/pA1.jpg"></a><p>Destino 1</p></li>
+		<li><a href="#img2"><img src="img/pA2.jpg"></a><p>Destino 2</p></li>
+		<li><a href="#img3"><img src="img/pA3.jpg"></a><p>Destino 3</p></li>
+		<li><a href="#img4"><img src="img/pA4.jpg"></a><p>Destino 4</p></li>
+		<li><a href="#img5"><img src="img/pA5.jpg"></a><p>Destino 5</p></li>
+		<li><a href="#img6"><img src="img/pA6.jpeg"></a><p>Destino 6</p></li>
+		<li><a href="#img7"><img src="img/pA7.jpg"></a><p>Destino 7</p></li>
+		<li><a href="#img8"><img src="img/pA8.webp"></a><p>Destino 8</p></li>
+		<li><a href="#img9"><img src="img/pA9.jpg"></a><p>Destino 9</p></li>
+		<li><a href="#img10"><img src="img/pA10.jpg"></a><p>Destino 10</p></li>
+		<li><a href="#img11"><img src="img/pA11.jpg"></a><p>Destino 11</p></li>
+		<li><a href="#img12"><img src="img/pA12.jpeg"></a><p>Destino 12</p></li>
+	</ul>
+
+	<div class="modal" id="img1">
+		<h3>Destino 1</h3>
+		<div class="imagen">
+			<a href="#img12">&#60;</a>
+			<a href="#img2"><img src="img/pA1.jpg"></a>
+			<a href="#img2">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img2">
+		<h3>Destino 2</h3>
+		<div class="imagen">
+			<a href="#img1">&#60;</a>
+			<a href="#img3"><img src="img/pA2.jpg"></a>
+			<a href="#img3">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img3">
+		<h3>Destino 3</h3>
+		<div class="imagen">
+			<a href="#img2">&#60;</a>
+			<a href="#img4"><img src="img/pA3.jpg"></a>
+			<a href="#img4">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img4">
+		<h3>Destino 4</h3>
+		<div class="imagen">
+			<a href="#img3">&#60;</a>
+			<a href="#img5"><img src="img/pA4.jpg"></a>
+			<a href="#img5">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+
+	<div class="modal" id="img5">
+		<h3>Destino 5</h3>
+		<div class="imagen">
+			<a href="#img4">&#60;</a>
+			<a href="#img6"><img src="img/pA5.jpg"></a>
+			<a href="#img6">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img6">
+		<h3>Destino 6</h3>
+		<div class="imagen">
+			<a href="#img5">&#60;</a>
+			<a href="#img7"><img src="img/pA6.jpeg"></a>
+			<a href="#img7">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img7">
+		<h3>Destino 7</h3>
+		<div class="imagen">
+			<a href="#img6">&#60;</a>
+			<a href="#img8"><img src="img/pA7.jpg"></a>
+			<a href="#img8">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img8">
+		<h3>Destino 8</h3>
+		<div class="imagen">
+			<a href="#img7">&#60;</a>
+			<a href="#img9"><img src="img/pA8.webp"></a>
+			<a href="#img9">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+
+	<div class="modal" id="img9">
+		<h3>Destino 9</h3>
+		<div class="imagen">
+			<a href="#img8">&#60;</a>
+			<a href="#img10"><img src="img/pA9.jpg"></a>
+			<a href="#img10">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img10">
+		<h3>Destino 10</h3>
+		<div class="imagen">
+			<a href="#img9">&#60;</a>
+			<a href="#img11"><img src="img/pA10.jpg"></a>
+			<a href="#img11">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img11">
+		<h3>Destino 11</h3>
+		<div class="imagen">
+			<a href="#img10">&#60;</a>
+			<a href="#img12"><img src="img/pA11.jpg"></a>
+			<a href="#img12">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img12">
+		<h3>Destino 12</h3>
+		<div class="imagen">
+			<a href="#img11">&#60;</a>
+			<a href="#img1"><img src="img/pA12.jpeg"></a>
+			<a href="#img1">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+
+	</div>
+	<footer>
+        <p>&copy2022 Joel Capape Hernández</p>
+        <p>2º Desarrollo de Aplicaciones Web</p>
+	</footer>
+	
+</div>
+</body>
+</html>
